@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+ 
+    <!-- ======================Base========================= -->
+
+  <ThingDef Abstract="True" Name="BaseLEDLight" ParentName="BuildingBase">
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<graphicData>
+       <texPath>LED_Lamp</texPath>
+       <graphicClass>Graphic_Single</graphicClass>
+       <shaderType>Transparent</shaderType>
+    </graphicData>
+    <blueprintGraphicData>
+    <texPath>LED_Lamp</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>LED_Lamp_MenuIcon</uiIconPath>
+    <building>
+	 <isInert>true</isInert>
+      <ignoreNeedsPower>false</ignoreNeedsPower>
+      <isEdifice>false</isEdifice>
+    </building>
+    <costList>
+      <Steel>5</Steel>
+      <Silver>25</Silver>
+    </costList>
+	<altitudeLayer>MoteOverhead</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+	<rotatable>false</rotatable>
+    <selectable>true</selectable>
+	<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	<constructEffect>ConstructMetal</constructEffect>
+    <statBases>
+      <MaxHitPoints>35</MaxHitPoints>
+      <WorkToBuild>80</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <DesignationCategory>LEDLights</DesignationCategory>
+    <comps>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <researchPrerequisites>
+      <li>LEDLights</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+    <!-- ======================LED Light========================= -->
+	
+  <ThingDef Abstract="True" Name="LEDLightBase" ParentName="BaseLEDLight">
+    <comps>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>7</basePowerConsumption>
+			<shortCircuitInRain>false</shortCircuitInRain>
+		</li>
+		<li>
+			<compClass>CompQuality</compClass>
+		</li>
+    </comps>
+	<specialDisplayRadius>3.6</specialDisplayRadius>
+  </ThingDef>
+  
+  <ThingDef ParentName="LEDLightBase">
+    <defName>LEDLight</defName>
+    <label>LED light</label>
+    <description>Power-saving LED light.</description>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5.6</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LEDLightBase">
+    <defName>LEDLight_Red</defName>
+    <label>LED light (red)</label>
+    <description>Power-saving LED light that glows red.</description>
+    <uiIconPath>LED_LampR_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>9</glowRadius>
+        <glowColor>(217,0,0,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="LEDLightBase">
+    <defName>LEDLight_Green</defName>
+    <label>LED light (green)</label>
+    <description>Power-saving LED light that glows green.</description>
+    <uiIconPath>LED_LampG_MenuIcon</uiIconPath>
+    <comps>   
+      <li Class="CompProperties_Glower">
+        <glowRadius>9</glowRadius>
+        <glowColor>(34,139,34,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="LEDLightBase">
+    <defName>LEDLight_Blue</defName>
+    <label>LED light (blue)</label>
+    <description>Power-saving LED light that glows blue.</description>
+    <uiIconPath>LED_LampB_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>8.5</glowRadius>
+        <glowColor>(0,0,217,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="LEDLightBase">
+    <defName>LEDLight_Yellow</defName>
+    <label>LED light (yellow)</label>
+    <description>Power-saving LED light that glows yellow.</description>
+    <uiIconPath>LED_LampY_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5.6</glowRadius>
+        <glowColor>(255,250,150,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="LEDLightBase">
+    <defName>LEDLight_Pink</defName>
+    <label>LED light (pink)</label>
+    <description>Power-saving LED light that glows pink.</description>
+    <uiIconPath>LED_LampP_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5.6</glowRadius>
+        <glowColor>(255,105,180,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="LEDLightBase">
+    <defName>LEDLight_Violet</defName>
+    <label>LED light (violet)</label>
+    <description>Power-saving LED light that glows violet.</description>
+    <uiIconPath>LED_LampV_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6.5</glowRadius>
+        <glowColor>(111,45,168,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+  <ThingDef ParentName="LEDLightBase">
+    <defName>LEDLight_Teal</defName>
+    <label>LED light (teal)</label>
+    <description>Power-saving LED light that glows teal.</description>
+    <uiIconPath>LED_LampT_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>7</glowRadius>
+        <glowColor>(0,123,167,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+      <!-- ======================Wide Range LED Light========================= -->
+	  
+<ThingDef Abstract="True" Name="WideRangeLEDLightBase" ParentName="BaseLEDLight">
+    <costList>
+      <Steel>15</Steel>
+      <Silver>45</Silver>
+    </costList>
+	<comps>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>15</basePowerConsumption>
+			<shortCircuitInRain>false</shortCircuitInRain>
+		</li>
+		<li>
+			<compClass>CompQuality</compClass>
+		</li>
+    </comps>
+	<specialDisplayRadius>5.6</specialDisplayRadius>
+  </ThingDef>
+  
+  <ThingDef ParentName="WideRangeLEDLightBase">
+    <defName>WRLEDLight</defName>
+    <label>wide range LED light</label>
+    <description>Power-saving LED light.</description>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>8.1</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="WideRangeLEDLightBase">
+    <defName>WRLEDLight_Red</defName>
+    <label>wide range LED light (red)</label>
+    <description>Power-saving LED light that glows red.</description>
+    <uiIconPath>LED_LampR_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>17</glowRadius>
+        <glowColor>(217,0,0,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="WideRangeLEDLightBase">
+    <defName>WRLEDLight_Green</defName>
+    <label>wide range LED light (green)</label>
+    <description>Power-saving LED light that glows green.</description>
+    <uiIconPath>LED_LampG_MenuIcon</uiIconPath>
+    <comps>   
+      <li Class="CompProperties_Glower">
+        <glowRadius>14.6</glowRadius>
+        <glowColor>(34,139,34,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="WideRangeLEDLightBase">
+    <defName>WRLEDLight_Blue</defName>
+    <label>wide range LED light (blue)</label>
+    <description>Power-saving LED light that glows blue.</description>
+    <uiIconPath>LED_LampB_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>12.3</glowRadius>
+        <glowColor>(0,0,217,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="WideRangeLEDLightBase">
+    <defName>WRLEDLight_Yellow</defName>
+    <label>wide range LED light (yellow)</label>
+    <description>Power-saving LED light that glows yellow.</description>
+    <uiIconPath>LED_LampY_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>8.5</glowRadius>
+        <glowColor>(255,250,150,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="WideRangeLEDLightBase">
+    <defName>WRLEDLight_Pink</defName>
+    <label>wide range LED light (pink)</label>
+    <description>Power-saving LED light that glows pink.</description>
+    <uiIconPath>LED_LampP_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>8.5</glowRadius>
+        <glowColor>(255,105,180,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="WideRangeLEDLightBase">
+    <defName>WRLEDLight_Violet</defName>
+    <label>wide range LED light (violet)</label>
+    <description>Power-saving LED light that glows violet.</description>
+    <uiIconPath>LED_LampV_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10.3</glowRadius>
+        <glowColor>(111,45,168,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+  <ThingDef ParentName="WideRangeLEDLightBase">
+    <defName>WRLEDLight_Teal</defName>
+    <label>wide range LED light (teal)</label>
+    <description>Power-saving LED light that glows teal.</description>
+    <uiIconPath>LED_LampT_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>11</glowRadius>
+        <glowColor>(0,123,167,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+  <!-- HID LED light -->
+
+  <ThingDef Abstract="True" Name="HIDLEDLightBase" ParentName="BaseLEDLight">
+    <graphicData>
+       <texPath>HID LED_Lamp</texPath>
+       <graphicClass>Graphic_Single</graphicClass>
+       <shaderType>Transparent</shaderType>
+    </graphicData>
+    <blueprintGraphicData>
+    <texPath>HID LED_Lamp</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>HID LED_Lamp_MenuIcon</uiIconPath>
+    <building>
+	 <isInert>true</isInert>
+      <ignoreNeedsPower>false</ignoreNeedsPower>
+      <isEdifice>false</isEdifice>
+    </building>
+    <costList>
+      <Steel>20</Steel>
+      <Silver>60</Silver>
+    </costList>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <passability>Standable</passability>
+    <statBases>
+      <Mass>2</Mass>
+    </statBases>
+    <DesignationCategory>LEDLights</DesignationCategory>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>25</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <specialDisplayRadius>8</specialDisplayRadius>
+    <researchPrerequisites>
+      <li>LEDLights</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+
+  <ThingDef ParentName="HIDLEDLightBase">
+    <defName>HIDLEDLight</defName>
+    <label>HID LED light</label>
+    <description>Power-saving LED light for larger areas.</description>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+  <ThingDef ParentName="HIDLEDLightBase">
+    <defName>HIDLEDLight_Red</defName>
+    <label>HID LED light (red)</label>
+    <description>Power-saving LED light for larger areas that glows red.</description>
+    <uiIconPath>HID LED_LampR_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>23</glowRadius>
+        <glowColor>(169,17,1,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="HIDLEDLightBase">
+    <defName>HIDLEDLight_Green</defName>
+    <label>HID LED light (green)</label>
+    <description>Power-saving LED light for larger areas that glows green.</description>
+    <uiIconPath>HID LED_LampG_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>20</glowRadius>
+        <glowColor>(34,139,34,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="HIDLEDLightBase">
+    <defName>HIDLEDLight_Blue</defName>
+    <label>HID LED light (blue)</label>
+    <description>Power-saving LED light for larger areas that glows blue.</description>
+    <uiIconPath>HID LED_LampB_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>18</glowRadius>
+        <glowColor>(0,71,171,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+  <ThingDef ParentName="HIDLEDLightBase">
+    <defName>HIDLEDLight_Yellow</defName>
+    <label>HID LED light (yellow)</label>
+    <description>Power-saving LED light for larger areas that glows yellow.</description>
+    <uiIconPath>HID LED_LampY_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>13.5</glowRadius>
+        <glowColor>(250,218,94,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="HIDLEDLightBase">
+    <defName>HIDLEDLight_Pink</defName>
+    <label>HID LED light (pink)</label>
+    <description>Power-saving LED light for larger areas that glows pink.</description>
+    <uiIconPath>HID LED_LampP_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>13</glowRadius>
+        <glowColor>(255,105,180,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="HIDLEDLightBase">
+    <defName>HIDLEDLight_Violet</defName>
+    <label>HID LED light (violet)</label>
+    <description>Power-saving LED light for larger areas that glows violet.</description>
+    <uiIconPath>HID LED_LampV_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>15</glowRadius>
+        <glowColor>(111,45,168,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="HIDLEDLightBase">
+    <defName>HIDLEDLight_Teal</defName>
+    <label>HID LED light (teal)</label>
+    <description>Power-saving LED light for larger areas that glows teal.</description>
+    <uiIconPath>HID LED_LampT_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>16</glowRadius>
+        <glowColor>(0,123,167,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="HIDLEDLightBase">
+    <defName>HIDLEDLightSquare</defName>
+    <label>square HID LED light</label>
+    <description>Power-saving LED light for larger areas.</description>
+    <graphicData>
+       <texPath>HID_LED_Square</texPath>
+       <graphicClass>Graphic_Single</graphicClass>
+       <shaderType>Transparent</shaderType>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <blueprintGraphicData>
+    <texPath>HID_LED_Square</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>HID_LED_Square_MenuIcon</uiIconPath>
+    <Size>(2,2)</Size>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+    </comps>
+    <specialDisplayRadius>0</specialDisplayRadius>
+  </ThingDef>
+
+   <!-- Wide Range HID LED light -->
+
+  <ThingDef Abstract="True" Name="WideRangeHIDLEDLightBase" ParentName="BaseLEDLight">
+    <graphicData>
+       <texPath>HID LED_Lamp</texPath>
+       <graphicClass>Graphic_Single</graphicClass>
+       <shaderType>Transparent</shaderType>
+    </graphicData>
+    <blueprintGraphicData>
+    <texPath>HID LED_Lamp</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>HID LED_Lamp_MenuIcon</uiIconPath>
+    <building>
+	 <isInert>true</isInert>
+      <ignoreNeedsPower>false</ignoreNeedsPower>
+      <isEdifice>false</isEdifice>
+    </building>
+    <costList>
+      <Steel>25</Steel>
+      <Silver>70</Silver>
+    </costList>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <passability>Standable</passability>
+    <statBases>
+      <Mass>2</Mass>
+    </statBases>
+    <DesignationCategory>LEDLights</DesignationCategory>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>40</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <specialDisplayRadius>13</specialDisplayRadius>
+    <researchPrerequisites>
+      <li>LEDLights</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+
+  <ThingDef ParentName="WideRangeHIDLEDLightBase">
+    <defName>WRHIDLEDLight</defName>
+    <label>wide range HID LED light</label>
+    <description>Power-saving LED light for huge areas.</description>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>22</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+  <ThingDef ParentName="WideRangeHIDLEDLightBase">
+    <defName>WRHIDLEDLight_Red</defName>
+    <label>wide range HID LED light (red)</label>
+    <description>Power-saving LED light for huge areas that glows red.</description>
+    <uiIconPath>HID LED_LampR_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>35</glowRadius>
+        <glowColor>(169,17,1,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="WideRangeHIDLEDLightBase">
+    <defName>WRHIDLEDLight_Green</defName>
+    <label>wide range HID LED light (green)</label>
+    <description>Power-saving LED light for huge areas that glows green.</description>
+    <uiIconPath>HID LED_LampG_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>30</glowRadius>
+        <glowColor>(34,139,34,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="WideRangeHIDLEDLightBase">
+    <defName>WRHIDLEDLight_Blue</defName>
+    <label>wide range HID LED light (blue)</label>
+    <description>Power-saving LED light for huge areas that glows blue.</description>
+    <uiIconPath>HID LED_LampB_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>26</glowRadius>
+        <glowColor>(0,71,171,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+  <ThingDef ParentName="WideRangeHIDLEDLightBase">
+    <defName>WRHIDLEDLight_Yellow</defName>
+    <label>wide range HID LED light (yellow)</label>
+    <description>Power-saving LED light for huge areas that glows yellow.</description>
+    <uiIconPath>HID LED_LampY_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>21.7</glowRadius>
+        <glowColor>(250,218,94,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="WideRangeHIDLEDLightBase">
+    <defName>WRHIDLEDLight_Pink</defName>
+    <label>wide range HID LED light (pink)</label>
+    <description>Power-saving LED light for huge areas that glows pink.</description>
+    <uiIconPath>HID LED_LampP_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>21.5</glowRadius>
+        <glowColor>(255,105,180,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="WideRangeHIDLEDLightBase">
+    <defName>WRHIDLEDLight_Violet</defName>
+    <label>wide range HID LED light (violet)</label>
+    <description>Power-saving LED light for huge areas that glows violet.</description>
+    <uiIconPath>HID LED_LampV_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>22</glowRadius>
+        <glowColor>(111,45,168,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="WideRangeHIDLEDLightBase">
+    <defName>WRHIDLEDLight_Teal</defName>
+    <label>wide range HID LED light (teal)</label>
+    <description>Power-saving LED light for huge areas that glows teal.</description>
+    <uiIconPath>HID LED_LampT_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>24</glowRadius>
+        <glowColor>(0,123,167,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="WideRangeHIDLEDLightBase">
+    <defName>WRHIDLEDLightSquare</defName>
+    <label>wide range square HID LED light</label>
+    <description>Power-saving LED light for huge areas.</description>
+    <graphicData>
+       <texPath>HID_LED_Square</texPath>
+       <graphicClass>Graphic_Single</graphicClass>
+       <shaderType>Transparent</shaderType>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <blueprintGraphicData>
+    <texPath>HID_LED_Square</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>HID_LED_Square_MenuIcon</uiIconPath>
+    <Size>(2,2)</Size>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>22</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+    </comps>
+    <specialDisplayRadius>0</specialDisplayRadius>
+  </ThingDef>
+
+</Buildings>

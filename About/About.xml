@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>LED Lights</name>
+  <author>cucumpear</author>
+  <targetVersion>0.16.1393</targetVersion>
+  <description>
+	v. 1.0
+A range of power-saving LED lights. A full rewrite of Loki88's LED Lights mod, which has been discontinued and can be found on the Ludeon forum. Textures were taken or adapted from Loki's mod.
+Includes ceiling lights, rope lights, growing lamps and a medical lamp.
+The medical lamp conflicts with mods that edit beds, loading such mods after LED Lights will remove the beds' ability to connect to the medical lamp.
+I have provided a compatibility patch for Anonemous2's More Furniture mod.</description>
+</ModMetaData>

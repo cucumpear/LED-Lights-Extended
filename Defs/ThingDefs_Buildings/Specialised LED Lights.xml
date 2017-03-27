@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+  
+
+  <ThingDef Abstract="True" Name="LEDGrowLightBase" ParentName="BaseLEDLight">
+    <thingClass>Building_SunLamp</thingClass>
+    <building>
+	 <isInert>true</isInert>
+      <ignoreNeedsPower>false</ignoreNeedsPower>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <Mass>1</Mass>
+    </statBases>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <passability>Standable</passability>
+    <DesignationCategory>LEDLights</DesignationCategory>
+    <researchPrerequisites>
+      <li>LEDGrowLights</li>
+      <li>ColoredLights</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+
+  <ThingDef ParentName="LEDGrowLightBase">
+    <defName>LEDGrowLight</defName>
+    <label>large LED growing light</label>
+    <description>Lights a large area brightly enough to grow crops, uses relatively little energy but is very expensive to build.</description>
+    <graphicData>
+       <texPath>LED_Grow_LampL</texPath>
+       <graphicClass>Graphic_Single</graphicClass>
+       <shaderType>Transparent</shaderType>
+    </graphicData>
+    <blueprintGraphicData>
+    <texPath>LED_Grow_LampL</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>LED_Grow_LampL_MenuIcon</uiIconPath>
+    <statBases>
+      <WorkToBuild>1200</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <Silver>270</Silver>
+      <Component>5</Component>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <basePowerConsumption>150</basePowerConsumption>
+        <compClass>CompPowerTrader</compClass>
+      </li>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>7.0</overlightRadius>
+        <glowRadius>16</glowRadius>
+        <glowColor>(255,50,255,0)</glowColor>
+      </li>
+    </comps>
+    <specialDisplayRadius>5.8</specialDisplayRadius>
+  </ThingDef>
+
+
+  <ThingDef ParentName="LEDGrowLightBase">
+    <defName>LEDGrowLightM</defName>
+    <label>medium LED growing light</label>
+    <description>Lights a medium area brightly enough to grow crops, uses little energy but is somewhat expensive to build.</description>
+    <graphicData>
+       <texPath>LED_Grow_LampM</texPath>
+       <graphicClass>Graphic_Single</graphicClass>
+       <shaderType>Transparent</shaderType>
+    </graphicData>
+    <blueprintGraphicData>
+    <texPath>LED_Grow_LampM</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>LED_Grow_LampM_MenuIcon</uiIconPath>
+    <statBases>
+      <WorkToBuild>700</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <Silver>120</Silver>
+      <Component>2</Component>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <basePowerConsumption>96</basePowerConsumption>
+        <compClass>CompPowerTrader</compClass>
+      </li>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>5</overlightRadius>
+        <glowRadius>12</glowRadius>
+        <glowColor>(255,50,255,0)</glowColor>
+      </li>
+    </comps>
+    <specialDisplayRadius>3.7</specialDisplayRadius>
+  </ThingDef>
+
+
+  <ThingDef ParentName="LEDGrowLightBase">
+    <defName>LEDGrowLightS</defName>
+    <label>small LED growing light</label>
+    <description>Lights a small area brightly enough to grow crops, uses little energy but is a bit expensive to build.</description>
+    <graphicData>
+       <texPath>LED_Grow_LampS</texPath>
+       <graphicClass>Graphic_Single</graphicClass>
+       <shaderType>Transparent</shaderType>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <blueprintGraphicData>
+    <texPath>LED_Grow_LampS</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>LED_Grow_LampS_MenuIcon</uiIconPath>
+    <statBases>
+      <WorkToBuild>300</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <Silver>80</Silver>
+      <Component>1</Component>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <basePowerConsumption>69</basePowerConsumption>
+        <compClass>CompPowerTrader</compClass>
+      </li>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>4.0</overlightRadius>
+        <glowRadius>10</glowRadius>
+        <glowColor>(255,50,255,0)</glowColor>
+      </li>
+    </comps>
+    <specialDisplayRadius>2.9</specialDisplayRadius>
+  </ThingDef>
+
+
+  <!-- Medical Lights -->
+
+
+  <ThingDef ParentName="BaseLEDLight">
+    <defName>LEDMedLight</defName>
+    <label>LED medical light</label>
+    <description>Lights a small area very brightly. The spectrum also inhibits bacterial growth, perfect for medical rooms.</description>
+    <graphicData>
+       <texPath>LED_Med_Lamp</texPath>
+       <graphicClass>Graphic_Single</graphicClass>
+       <shaderType>Transparent</shaderType>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <blueprintGraphicData>
+    <texPath>LED_Med_Lamp</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>LED_Med_Lamp_MenuIcon</uiIconPath>
+    <building>
+	 <isInert>true</isInert>
+      <ignoreNeedsPower>false</ignoreNeedsPower>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <WorkToBuild>350</WorkToBuild>
+      <Mass>2</Mass>
+    </statBases>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <DesignationCategory>LEDLights</DesignationCategory>
+    <costList>
+      <Steel>20</Steel>
+      <Silver>80</Silver>
+      <Component>1</Component>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <basePowerConsumption>69</basePowerConsumption>
+        <compClass>CompPowerTrader</compClass>
+      </li>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>4.0</overlightRadius>
+        <glowRadius>10</glowRadius>
+        <glowColor>(0,71,171,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+     <MedicalTendQualityOffset>0.05</MedicalTendQualityOffset>
+     <ImmunityGainSpeedFactor>0.015</ImmunityGainSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <canLinkToMedBedsOnly>true</canLinkToMedBedsOnly>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <specialDisplayRadius>2.9</specialDisplayRadius>
+    <placeWorkers>
+	   <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>LEDMedLights</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+
+</Buildings>

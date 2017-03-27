@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <ThingDef Abstract="True" Name="LEDRopeLightBase" ParentName="BuildingBase">
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>RopeLight_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Custom8</li>
+      </linkFlags>
+      <shaderType>Transparent</shaderType>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <blueprintGraphicData>
+      <texPath>RopeLight_Atlas</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>RopeLight_MenuIcon</uiIconPath>
+    <building>
+	 <isInert>true</isInert>
+      <ignoreNeedsPower>false</ignoreNeedsPower>
+      <isEdifice>false</isEdifice>
+    </building>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <MaxHitPoints>15</MaxHitPoints>
+      <WorkToBuild>35</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <costList>
+      <Steel>1</Steel>
+      <Silver>5</Silver>
+    </costList>
+    <placeWorkers>
+      <li>PlaceWorker_Conduit</li>
+    </placeWorkers>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <DesignationCategory>LEDLights</DesignationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Electricity</li>
+      <li>LEDLights</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="LEDRopeLightBase">
+    <defName>LEDRopeLight</defName>
+    <label>LED rope light</label>
+    <description>LED rope lights that illuminate a small area. Must be directly connected to power.</description>
+    <uiIconPath>RopeLight_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Power">
+        <transmitsPower>true</transmitsPower>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+  <ThingDef ParentName="LEDRopeLightBase">
+    <defName>LEDRopeLight_Red</defName>
+    <label>LED rope light (red)</label>
+    <description>LED rope lights that illuminate a small area red. Must be directly connected to power.</description>
+    <uiIconPath>RopeLightR_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Power">
+        <transmitsPower>true</transmitsPower>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(169,17,1,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="LEDRopeLightBase">
+    <defName>LEDRopeLight_Green</defName>
+    <label>LED rope light (green)</label>
+    <description>LED rope lights that illuminate a small area green. Must be directly connected to power.</description>
+    <uiIconPath>RopeLightG_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Power">
+        <transmitsPower>true</transmitsPower>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(34,139,34,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="LEDRopeLightBase">
+    <defName>LEDRopeLight_Blue</defName>
+    <label>LED rope light (blue)</label>
+    <description>LED rope lights that illuminate a small area blue. Must be directly connected to power.</description>
+    <uiIconPath>RopeLightB_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Power">
+        <transmitsPower>true</transmitsPower>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(0,71,171,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+  <ThingDef ParentName="LEDRopeLightBase">
+    <defName>LEDRopeLight_Yellow</defName>
+    <label>LED rope light (yellow)</label>
+    <description>LED rope lights that illuminate a small area yellow. Must be directly connected to power.</description>
+    <uiIconPath>RopeLightY_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Power">
+        <transmitsPower>true</transmitsPower>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(250,218,94,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="LEDRopeLightBase">
+    <defName>LEDRopeLight_Pink</defName>
+    <label>LED rope light (pink)</label>
+    <description>LED rope lights that illuminate a small area pink. Must be directly connected to power.</description>
+    <uiIconPath>RopeLightP_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Power">
+        <transmitsPower>true</transmitsPower>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(255,105,180,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+  <ThingDef ParentName="LEDRopeLightBase">
+    <defName>LEDRopeLight_Violet</defName>
+    <label>LED rope light (violet)</label>
+    <description>LED rope lights that illuminate a small area violet. Must be directly connected to power.</description>
+    <uiIconPath>RopeLightV_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Power">
+        <transmitsPower>true</transmitsPower>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(111,45,168,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="LEDRopeLightBase">
+    <defName>LEDRopeLight_Teal</defName>
+    <label>LED rope light (teal)</label>
+    <description>LED rope lights that illuminate a small area teal. Must be directly connected to power.</description>
+    <uiIconPath>RopeLightT_MenuIcon</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Power">
+        <transmitsPower>true</transmitsPower>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(0,123,167,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+  </ThingDef>
+
+
+
+
+  <ThingDef ParentName="LEDRopeLightBase">
+    <defName>LEDRopeGrowLight</defName>
+    <label>LED rope growing light</label>
+    <description>Lights a small area brightly enough to grow crops, uses very little energy but is slightly expensive to build.</description>
+    <uiIconPath>RopeLightGr_MenuIcon</uiIconPath>
+    <costList>
+      <Steel>2</Steel>
+      <Silver>15</Silver>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <transmitsPower>true</transmitsPower>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>5</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>3</overlightRadius>
+        <glowRadius>7</glowRadius>
+	<glowColor>(255,50,255,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>LEDGrowLights</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+
+
+  
+</Buildings>
