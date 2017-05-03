@@ -2,7 +2,7 @@
 <ModMetaData>
   <name>LED Lights</name>
   <author>cucumpear</author>
-  <targetVersion>0.16.1393</targetVersion>
+  <targetVersion>0.17.1526</targetVersion>
   <description>
 	v. 1.0
 A range of power-saving LED lights. A full rewrite of Loki88's LED Lights mod, which has been discontinued and can be found on the Ludeon forum. Textures were taken or adapted from Loki's mod.
