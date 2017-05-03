@@ -104,7 +104,7 @@
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>VitalsMonitor</li>
-          <li>LEDMedLight</li>
+          <li>CCP_LEDMedLight</li>
         </linkableFacilities>
       </li>
 			<li Class="CompProperties_RoomIdentifier">
@@ -163,7 +163,7 @@
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>VitalsMonitor</li>
-          <li>LEDMedLight</li>
+          <li>CCP_LEDMedLight</li>
         </linkableFacilities>
       </li>
 			<li Class="CompProperties_RoomIdentifier">
@@ -227,7 +227,7 @@
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>VitalsMonitor</li>
-          <li>LEDMedLight</li>
+          <li>CCP_LEDMedLight</li>
         </linkableFacilities>
       </li>
 			<li Class="CompProperties_RoomIdentifier">
@@ -288,7 +288,7 @@
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>VitalsMonitor</li>
-          <li>LEDMedLight</li>
+          <li>CCP_LEDMedLight</li>
         </linkableFacilities>
       </li>
 			<li Class="CompProperties_RoomIdentifier">

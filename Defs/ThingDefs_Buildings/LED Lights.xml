@@ -3,7 +3,7 @@
  
     <!-- ======================Base========================= -->
 
-  <ThingDef Abstract="True" Name="BaseLEDLight" ParentName="BuildingBase">
+  <ThingDef Abstract="True" Name="CCP_BaseLEDLight" ParentName="BuildingBase">
     <thingClass>Building</thingClass>
     <category>Building</category>
 	<minifiedDef>MinifiedFurniture</minifiedDef>
@@ -44,13 +44,13 @@
       <li Class="CompProperties_Flickable"/>
     </comps>
     <researchPrerequisites>
-      <li>LEDLights</li>
+      <li>CCP_LEDLights</li>
     </researchPrerequisites>
   </ThingDef>
   
     <!-- ======================LED Light========================= -->
 	
-  <ThingDef Abstract="True" Name="LEDLightBase" ParentName="BaseLEDLight">
+  <ThingDef Abstract="True" Name="CCP_LEDLightBase" ParentName="CCP_BaseLEDLight">
     <comps>
 		<li Class="CompProperties_Power">
 			<compClass>CompPowerTrader</compClass>
@@ -64,8 +64,8 @@
 	<specialDisplayRadius>3.6</specialDisplayRadius>
   </ThingDef>
   
-  <ThingDef ParentName="LEDLightBase">
-    <defName>LEDLight</defName>
+  <ThingDef ParentName="CCP_LEDLightBase">
+    <defName>CCP_LEDLight</defName>
     <label>LED light</label>
     <description>Power-saving LED light.</description>
     <comps>
@@ -76,8 +76,8 @@
     </comps>
   </ThingDef>
 
-  <ThingDef ParentName="LEDLightBase">
-    <defName>LEDLight_Red</defName>
+  <ThingDef ParentName="CCP_LEDLightBase">
+    <defName>CCP_LEDLight_Red</defName>
     <label>LED light (red)</label>
     <description>Power-saving LED light that glows red.</description>
     <uiIconPath>LED_LampR_MenuIcon</uiIconPath>
@@ -90,8 +90,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="LEDLightBase">
-    <defName>LEDLight_Green</defName>
+  <ThingDef ParentName="CCP_LEDLightBase">
+    <defName>CCP_LEDLight_Green</defName>
     <label>LED light (green)</label>
     <description>Power-saving LED light that glows green.</description>
     <uiIconPath>LED_LampG_MenuIcon</uiIconPath>
@@ -104,8 +104,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="LEDLightBase">
-    <defName>LEDLight_Blue</defName>
+  <ThingDef ParentName="CCP_LEDLightBase">
+    <defName>CCP_LEDLight_Blue</defName>
     <label>LED light (blue)</label>
     <description>Power-saving LED light that glows blue.</description>
     <uiIconPath>LED_LampB_MenuIcon</uiIconPath>
@@ -118,8 +118,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="LEDLightBase">
-    <defName>LEDLight_Yellow</defName>
+  <ThingDef ParentName="CCP_LEDLightBase">
+    <defName>CCP_LEDLight_Yellow</defName>
     <label>LED light (yellow)</label>
     <description>Power-saving LED light that glows yellow.</description>
     <uiIconPath>LED_LampY_MenuIcon</uiIconPath>
@@ -132,8 +132,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="LEDLightBase">
-    <defName>LEDLight_Pink</defName>
+  <ThingDef ParentName="CCP_LEDLightBase">
+    <defName>CCP_LEDLight_Pink</defName>
     <label>LED light (pink)</label>
     <description>Power-saving LED light that glows pink.</description>
     <uiIconPath>LED_LampP_MenuIcon</uiIconPath>
@@ -146,8 +146,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="LEDLightBase">
-    <defName>LEDLight_Violet</defName>
+  <ThingDef ParentName="CCP_LEDLightBase">
+    <defName>CCP_LEDLight_Violet</defName>
     <label>LED light (violet)</label>
     <description>Power-saving LED light that glows violet.</description>
     <uiIconPath>LED_LampV_MenuIcon</uiIconPath>
@@ -161,8 +161,8 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="LEDLightBase">
-    <defName>LEDLight_Teal</defName>
+  <ThingDef ParentName="CCP_LEDLightBase">
+    <defName>CCP_LEDLight_Teal</defName>
     <label>LED light (teal)</label>
     <description>Power-saving LED light that glows teal.</description>
     <uiIconPath>LED_LampT_MenuIcon</uiIconPath>
@@ -177,7 +177,7 @@
 
       <!-- ======================Wide Range LED Light========================= -->
 	  
-<ThingDef Abstract="True" Name="WideRangeLEDLightBase" ParentName="BaseLEDLight">
+<ThingDef Abstract="True" Name="CCP_WideRangeLEDLightBase" ParentName="CCP_BaseLEDLight">
     <costList>
       <Steel>15</Steel>
       <Silver>45</Silver>
@@ -195,8 +195,8 @@
 	<specialDisplayRadius>5.6</specialDisplayRadius>
   </ThingDef>
   
-  <ThingDef ParentName="WideRangeLEDLightBase">
-    <defName>WRLEDLight</defName>
+  <ThingDef ParentName="CCP_WideRangeLEDLightBase">
+    <defName>CCP_WRLEDLight</defName>
     <label>wide range LED light</label>
     <description>Power-saving LED light.</description>
     <comps>
@@ -207,8 +207,8 @@
     </comps>
   </ThingDef>
 
-  <ThingDef ParentName="WideRangeLEDLightBase">
-    <defName>WRLEDLight_Red</defName>
+  <ThingDef ParentName="CCP_WideRangeLEDLightBase">
+    <defName>CCP_WRLEDLight_Red</defName>
     <label>wide range LED light (red)</label>
     <description>Power-saving LED light that glows red.</description>
     <uiIconPath>LED_LampR_MenuIcon</uiIconPath>
@@ -221,8 +221,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="WideRangeLEDLightBase">
-    <defName>WRLEDLight_Green</defName>
+  <ThingDef ParentName="CCP_WideRangeLEDLightBase">
+    <defName>CCP_WRLEDLight_Green</defName>
     <label>wide range LED light (green)</label>
     <description>Power-saving LED light that glows green.</description>
     <uiIconPath>LED_LampG_MenuIcon</uiIconPath>
@@ -235,8 +235,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="WideRangeLEDLightBase">
-    <defName>WRLEDLight_Blue</defName>
+  <ThingDef ParentName="CCP_WideRangeLEDLightBase">
+    <defName>CCP_WRLEDLight_Blue</defName>
     <label>wide range LED light (blue)</label>
     <description>Power-saving LED light that glows blue.</description>
     <uiIconPath>LED_LampB_MenuIcon</uiIconPath>
@@ -249,8 +249,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="WideRangeLEDLightBase">
-    <defName>WRLEDLight_Yellow</defName>
+  <ThingDef ParentName="CCP_WideRangeLEDLightBase">
+    <defName>CCP_WRLEDLight_Yellow</defName>
     <label>wide range LED light (yellow)</label>
     <description>Power-saving LED light that glows yellow.</description>
     <uiIconPath>LED_LampY_MenuIcon</uiIconPath>
@@ -263,8 +263,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="WideRangeLEDLightBase">
-    <defName>WRLEDLight_Pink</defName>
+  <ThingDef ParentName="CCP_WideRangeLEDLightBase">
+    <defName>CCP_WRLEDLight_Pink</defName>
     <label>wide range LED light (pink)</label>
     <description>Power-saving LED light that glows pink.</description>
     <uiIconPath>LED_LampP_MenuIcon</uiIconPath>
@@ -277,8 +277,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="WideRangeLEDLightBase">
-    <defName>WRLEDLight_Violet</defName>
+  <ThingDef ParentName="CCP_WideRangeLEDLightBase">
+    <defName>CCP_WRLEDLight_Violet</defName>
     <label>wide range LED light (violet)</label>
     <description>Power-saving LED light that glows violet.</description>
     <uiIconPath>LED_LampV_MenuIcon</uiIconPath>
@@ -292,8 +292,8 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WideRangeLEDLightBase">
-    <defName>WRLEDLight_Teal</defName>
+  <ThingDef ParentName="CCP_WideRangeLEDLightBase">
+    <defName>CCP_WRLEDLight_Teal</defName>
     <label>wide range LED light (teal)</label>
     <description>Power-saving LED light that glows teal.</description>
     <uiIconPath>LED_LampT_MenuIcon</uiIconPath>
@@ -309,7 +309,7 @@
 
   <!-- HID LED light -->
 
-  <ThingDef Abstract="True" Name="HIDLEDLightBase" ParentName="BaseLEDLight">
+  <ThingDef Abstract="True" Name="CCP_HIDLEDLightBase" ParentName="CCP_BaseLEDLight">
     <graphicData>
        <texPath>HID LED_Lamp</texPath>
        <graphicClass>Graphic_Single</graphicClass>
@@ -346,13 +346,13 @@
     </comps>
     <specialDisplayRadius>8</specialDisplayRadius>
     <researchPrerequisites>
-      <li>LEDLights</li>
+      <li>CCP_LEDLights</li>
     </researchPrerequisites>
   </ThingDef>
 
 
-  <ThingDef ParentName="HIDLEDLightBase">
-    <defName>HIDLEDLight</defName>
+  <ThingDef ParentName="CCP_HIDLEDLightBase">
+    <defName>CCP_HIDLEDLight</defName>
     <label>HID LED light</label>
     <description>Power-saving LED light for larger areas.</description>
     <comps>
@@ -364,8 +364,8 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="HIDLEDLightBase">
-    <defName>HIDLEDLight_Red</defName>
+  <ThingDef ParentName="CCP_HIDLEDLightBase">
+    <defName>CCP_HIDLEDLight_Red</defName>
     <label>HID LED light (red)</label>
     <description>Power-saving LED light for larger areas that glows red.</description>
     <uiIconPath>HID LED_LampR_MenuIcon</uiIconPath>
@@ -378,8 +378,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="HIDLEDLightBase">
-    <defName>HIDLEDLight_Green</defName>
+  <ThingDef ParentName="CCP_HIDLEDLightBase">
+    <defName>CCP_HIDLEDLight_Green</defName>
     <label>HID LED light (green)</label>
     <description>Power-saving LED light for larger areas that glows green.</description>
     <uiIconPath>HID LED_LampG_MenuIcon</uiIconPath>
@@ -392,8 +392,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="HIDLEDLightBase">
-    <defName>HIDLEDLight_Blue</defName>
+  <ThingDef ParentName="CCP_HIDLEDLightBase">
+    <defName>CCP_HIDLEDLight_Blue</defName>
     <label>HID LED light (blue)</label>
     <description>Power-saving LED light for larger areas that glows blue.</description>
     <uiIconPath>HID LED_LampB_MenuIcon</uiIconPath>
@@ -407,8 +407,8 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="HIDLEDLightBase">
-    <defName>HIDLEDLight_Yellow</defName>
+  <ThingDef ParentName="CCP_HIDLEDLightBase">
+    <defName>CCP_HIDLEDLight_Yellow</defName>
     <label>HID LED light (yellow)</label>
     <description>Power-saving LED light for larger areas that glows yellow.</description>
     <uiIconPath>HID LED_LampY_MenuIcon</uiIconPath>
@@ -421,8 +421,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="HIDLEDLightBase">
-    <defName>HIDLEDLight_Pink</defName>
+  <ThingDef ParentName="CCP_HIDLEDLightBase">
+    <defName>CCP_HIDLEDLight_Pink</defName>
     <label>HID LED light (pink)</label>
     <description>Power-saving LED light for larger areas that glows pink.</description>
     <uiIconPath>HID LED_LampP_MenuIcon</uiIconPath>
@@ -435,8 +435,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="HIDLEDLightBase">
-    <defName>HIDLEDLight_Violet</defName>
+  <ThingDef ParentName="CCP_HIDLEDLightBase">
+    <defName>CCP_HIDLEDLight_Violet</defName>
     <label>HID LED light (violet)</label>
     <description>Power-saving LED light for larger areas that glows violet.</description>
     <uiIconPath>HID LED_LampV_MenuIcon</uiIconPath>
@@ -449,8 +449,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="HIDLEDLightBase">
-    <defName>HIDLEDLight_Teal</defName>
+  <ThingDef ParentName="CCP_HIDLEDLightBase">
+    <defName>CCP_HIDLEDLight_Teal</defName>
     <label>HID LED light (teal)</label>
     <description>Power-saving LED light for larger areas that glows teal.</description>
     <uiIconPath>HID LED_LampT_MenuIcon</uiIconPath>
@@ -465,8 +465,8 @@
 
 
 
-  <ThingDef ParentName="HIDLEDLightBase">
-    <defName>HIDLEDLightSquare</defName>
+  <ThingDef ParentName="CCP_HIDLEDLightBase">
+    <defName>CCP_HIDLEDLightSquare</defName>
     <label>square HID LED light</label>
     <description>Power-saving LED light for larger areas.</description>
     <graphicData>
@@ -491,7 +491,7 @@
 
    <!-- Wide Range HID LED light -->
 
-  <ThingDef Abstract="True" Name="WideRangeHIDLEDLightBase" ParentName="BaseLEDLight">
+  <ThingDef Abstract="True" Name="CCP_WideRangeHIDLEDLightBase" ParentName="CCP_BaseLEDLight">
     <graphicData>
        <texPath>HID LED_Lamp</texPath>
        <graphicClass>Graphic_Single</graphicClass>
@@ -528,13 +528,13 @@
     </comps>
     <specialDisplayRadius>13</specialDisplayRadius>
     <researchPrerequisites>
-      <li>LEDLights</li>
+      <li>CCP_LEDLights</li>
     </researchPrerequisites>
   </ThingDef>
 
 
-  <ThingDef ParentName="WideRangeHIDLEDLightBase">
-    <defName>WRHIDLEDLight</defName>
+  <ThingDef ParentName="CCP_WideRangeHIDLEDLightBase">
+    <defName>CCP_WRHIDLEDLight</defName>
     <label>wide range HID LED light</label>
     <description>Power-saving LED light for huge areas.</description>
     <comps>
@@ -546,8 +546,8 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WideRangeHIDLEDLightBase">
-    <defName>WRHIDLEDLight_Red</defName>
+  <ThingDef ParentName="CCP_WideRangeHIDLEDLightBase">
+    <defName>CCP_WRHIDLEDLight_Red</defName>
     <label>wide range HID LED light (red)</label>
     <description>Power-saving LED light for huge areas that glows red.</description>
     <uiIconPath>HID LED_LampR_MenuIcon</uiIconPath>
@@ -560,8 +560,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="WideRangeHIDLEDLightBase">
-    <defName>WRHIDLEDLight_Green</defName>
+  <ThingDef ParentName="CCP_WideRangeHIDLEDLightBase">
+    <defName>CCP_WRHIDLEDLight_Green</defName>
     <label>wide range HID LED light (green)</label>
     <description>Power-saving LED light for huge areas that glows green.</description>
     <uiIconPath>HID LED_LampG_MenuIcon</uiIconPath>
@@ -574,8 +574,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="WideRangeHIDLEDLightBase">
-    <defName>WRHIDLEDLight_Blue</defName>
+  <ThingDef ParentName="CCP_WideRangeHIDLEDLightBase">
+    <defName>CCP_WRHIDLEDLight_Blue</defName>
     <label>wide range HID LED light (blue)</label>
     <description>Power-saving LED light for huge areas that glows blue.</description>
     <uiIconPath>HID LED_LampB_MenuIcon</uiIconPath>
@@ -589,8 +589,8 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WideRangeHIDLEDLightBase">
-    <defName>WRHIDLEDLight_Yellow</defName>
+  <ThingDef ParentName="CCP_WideRangeHIDLEDLightBase">
+    <defName>CCP_WRHIDLEDLight_Yellow</defName>
     <label>wide range HID LED light (yellow)</label>
     <description>Power-saving LED light for huge areas that glows yellow.</description>
     <uiIconPath>HID LED_LampY_MenuIcon</uiIconPath>
@@ -603,8 +603,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="WideRangeHIDLEDLightBase">
-    <defName>WRHIDLEDLight_Pink</defName>
+  <ThingDef ParentName="CCP_WideRangeHIDLEDLightBase">
+    <defName>CCP_WRHIDLEDLight_Pink</defName>
     <label>wide range HID LED light (pink)</label>
     <description>Power-saving LED light for huge areas that glows pink.</description>
     <uiIconPath>HID LED_LampP_MenuIcon</uiIconPath>
@@ -617,8 +617,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="WideRangeHIDLEDLightBase">
-    <defName>WRHIDLEDLight_Violet</defName>
+  <ThingDef ParentName="CCP_WideRangeHIDLEDLightBase">
+    <defName>CCP_WRHIDLEDLight_Violet</defName>
     <label>wide range HID LED light (violet)</label>
     <description>Power-saving LED light for huge areas that glows violet.</description>
     <uiIconPath>HID LED_LampV_MenuIcon</uiIconPath>
@@ -631,8 +631,8 @@
     <researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="WideRangeHIDLEDLightBase">
-    <defName>WRHIDLEDLight_Teal</defName>
+  <ThingDef ParentName="CCP_WideRangeHIDLEDLightBase">
+    <defName>CCP_WRHIDLEDLight_Teal</defName>
     <label>wide range HID LED light (teal)</label>
     <description>Power-saving LED light for huge areas that glows teal.</description>
     <uiIconPath>HID LED_LampT_MenuIcon</uiIconPath>
@@ -647,8 +647,8 @@
 
 
 
-  <ThingDef ParentName="WideRangeHIDLEDLightBase">
-    <defName>WRHIDLEDLightSquare</defName>
+  <ThingDef ParentName="CCP_WideRangeHIDLEDLightBase">
+    <defName>CCP_WRHIDLEDLightSquare</defName>
     <label>wide range square HID LED light</label>
     <description>Power-saving LED light for huge areas.</description>
     <graphicData>
