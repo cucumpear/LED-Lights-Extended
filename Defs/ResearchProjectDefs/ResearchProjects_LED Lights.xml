@@ -3,7 +3,7 @@
 
 
 	<ResearchProjectDef>
-		<defName>LEDLights</defName>
+		<defName>CCP_LEDLights</defName>
 		<label>LED lights</label>
 		<description>Build various power-saving ceiling lights and rope lights.</description>
 		<baseCost>400</baseCost>
@@ -16,13 +16,13 @@
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>LEDGrowLights</defName>
+		<defName>CCP_LEDGrowLights</defName>
 		<label>LED growing lights</label>
 		<description>Build power-saving lamps to light up growing areas of three sizes.</description>
 		<baseCost>800</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
-			<li>LEDLights</li>
+			<li>CCP_LEDLights</li>
 			<li>ColoredLights</li>
 		</prerequisites>
 		<researchViewX>5</researchViewX>
@@ -30,13 +30,13 @@
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>LEDMedLights</defName>
+		<defName>CCP_LEDMedLights</defName>
 		<label>LED medical lights</label>
 		<description>Build power-saving lamps to light up hospital rooms for best surgery success and immunity gain.</description>
 		<baseCost>1200</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
-			<li>LEDGrowLights</li>
+			<li>CCP_LEDGrowLights</li>
 		</prerequisites>
 		<researchViewX>5.5</researchViewX>
 		<researchViewY>1</researchViewY>
