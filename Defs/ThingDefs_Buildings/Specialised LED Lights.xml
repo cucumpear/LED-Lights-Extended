@@ -9,6 +9,7 @@
       <ignoreNeedsPower>false</ignoreNeedsPower>
       <isEdifice>false</isEdifice>
     </building>
+    <tickerType>Rare</tickerType>
     <statBases>
       <Mass>1</Mass>
     </statBases>
@@ -53,6 +54,12 @@
         <glowRadius>16</glowRadius>
         <glowColor>(255,50,255,0)</glowColor>
       </li>
+      <li Class="CompProperties_Schedule">
+        <!-- Match plant growing times -->
+        <startTime>0.25</startTime>
+        <endTime>0.8</endTime>
+        <offMessage>Off for plant resting period</offMessage>
+      </li>
     </comps>
     <specialDisplayRadius>5.8</specialDisplayRadius>
   </ThingDef>
@@ -88,6 +95,12 @@
         <overlightRadius>5</overlightRadius>
         <glowRadius>12</glowRadius>
         <glowColor>(255,50,255,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Schedule">
+        <!-- Match plant growing times -->
+        <startTime>0.25</startTime>
+        <endTime>0.8</endTime>
+        <offMessage>Off for plant resting period</offMessage>
       </li>
     </comps>
     <specialDisplayRadius>3.7</specialDisplayRadius>
@@ -125,6 +138,12 @@
         <overlightRadius>4.0</overlightRadius>
         <glowRadius>10</glowRadius>
         <glowColor>(255,50,255,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Schedule">
+        <!-- Match plant growing times -->
+        <startTime>0.25</startTime>
+        <endTime>0.8</endTime>
+        <offMessage>Off for plant resting period</offMessage>
       </li>
     </comps>
     <specialDisplayRadius>2.9</specialDisplayRadius>

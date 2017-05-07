@@ -220,7 +220,6 @@
 
 
 
-
   <ThingDef ParentName="CCP_LEDRopeLightBase">
     <defName>CCP_LEDRopeGrowLight</defName>
     <label>LED rope growing light</label>
@@ -230,6 +229,7 @@
       <Steel>2</Steel>
       <Silver>15</Silver>
     </costList>
+    <tickerType>Rare</tickerType>
     <comps>
       <li Class="CompProperties_Power">
         <transmitsPower>true</transmitsPower>
@@ -240,13 +240,19 @@
       <li Class="CompProperties_Glower">
         <overlightRadius>3</overlightRadius>
         <glowRadius>7</glowRadius>
-	<glowColor>(255,50,255,0)</glowColor>
+	    <glowColor>(255,50,255,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Schedule">
+        <!-- Match plant growing times -->
+        <startTime>0.25</startTime>
+        <endTime>0.8</endTime>
+        <offMessage>Off for plant resting period</offMessage>
       </li>
     </comps>
     <researchPrerequisites>
       <li>CCP_LEDGrowLights</li>
     </researchPrerequisites>
-  </ThingDef>
+</ThingDef>
 
 
 
