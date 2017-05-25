@@ -176,7 +176,7 @@
       <WorkToBuild>350</WorkToBuild>
       <Mass>2</Mass>
     </statBases>
-    <altitudeLayer>Building</altitudeLayer>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
     <passability>Standable</passability>
     <DesignationCategory>LEDLights</DesignationCategory>
     <costList>
@@ -196,8 +196,8 @@
       </li>
       <li Class="CompProperties_Facility">
         <statOffsets>
-     <MedicalTendQualityOffset>0.05</MedicalTendQualityOffset>
-     <ImmunityGainSpeedFactor>0.015</ImmunityGainSpeedFactor>
+			<MedicalTendQualityOffset>0.05</MedicalTendQualityOffset>
+			<ImmunityGainSpeedFactor>0.015</ImmunityGainSpeedFactor>
         </statOffsets>
         <maxSimultaneous>1</maxSimultaneous>
         <canLinkToMedBedsOnly>true</canLinkToMedBedsOnly>
