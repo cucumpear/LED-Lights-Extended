@@ -115,7 +115,7 @@
        <texPath>LED_Grow_LampS</texPath>
        <graphicClass>Graphic_Single</graphicClass>
        <shaderType>Transparent</shaderType>
-      <drawSize>(2,2)</drawSize>
+      <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
     <blueprintGraphicData>
     <texPath>LED_Grow_LampS</texPath>

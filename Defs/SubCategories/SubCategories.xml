@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Halp IDK what I'm doing -->
+    <ArchitectSense.DesignationSubCategoryDef>
+        <defName>SubCategory_LEDRopeLights</defName>
+        <label>LED rope lights</label>
+        <description>LED rope lights that illuminate a small area. Must be directly connected to power.</description>
+        <defNames>
+            <li>CCP_LEDRopeLight</li>
+            <li>CCP_LEDRopeLight_Red</li>
+            <li>CCP_LEDRopeLight_Green</li>
+            <li>CCP_LEDRopeLight_Blue</li>
+            <li>CCP_LEDRopeLight_Yellow</li>
+            <li>CCP_LEDRopeLight_Pink</li>
+            <li>CCP_LEDRopeLight_Violet</li>
+            <li>CCP_LEDRopeLight_Teal</li>
+        </defNames>
+        <designationCategory>LEDLights</designationCategory>
+        <emulateStuff>true</emulateStuff>
+        <preview>false</preview>
+        <!--<debug>true</debug>-->
+    </ArchitectSense.DesignationSubCategoryDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+        <defName>SubCategory_LEDLights</defName>
+        <label>LED lights</label>
+        <description>Power-saving LED light.</description>
+        <defNames>
+            <li>CCP_LEDLight</li>
+            <li>CCP_LEDLight_Red</li>
+            <li>CCP_LEDLight_Green</li>
+            <li>CCP_LEDLight_Blue</li>
+            <li>CCP_LEDLight_Yellow</li>
+            <li>CCP_LEDLight_Pink</li>
+            <li>CCP_LEDLight_Violet</li>
+            <li>CCP_LEDLight_Teal</li>
+        </defNames>
+        <designationCategory>LEDLights</designationCategory>
+        <emulateStuff>true</emulateStuff>
+        <preview>false</preview>
+        <!--<debug>true</debug>-->
+    </ArchitectSense.DesignationSubCategoryDef>
+	
+    <ArchitectSense.DesignationSubCategoryDef>
+        <defName>SubCategory_WRLEDLights</defName>
+        <label>wide range LED lights</label>
+        <description>Power-saving LED light.</description>
+        <defNames>
+            <li>CCP_WRLEDLight</li>
+            <li>CCP_WRLEDLight_Red</li>
+            <li>CCP_WRLEDLight_Green</li>
+            <li>CCP_WRLEDLight_Blue</li>
+            <li>CCP_WRLEDLight_Yellow</li>
+            <li>CCP_WRLEDLight_Pink</li>
+            <li>CCP_WRLEDLight_Violet</li>
+            <li>CCP_WRLEDLight_Teal</li>
+        </defNames>
+        <designationCategory>LEDLights</designationCategory>
+        <emulateStuff>true</emulateStuff>
+        <preview>false</preview>
+        <!--<debug>true</debug>-->
+    </ArchitectSense.DesignationSubCategoryDef>
+	
+    <ArchitectSense.DesignationSubCategoryDef>
+        <defName>SubCategory_HIDLEDLights</defName>
+        <label>HID LED lights</label>
+        <description>Power-saving LED light for larger areas.</description>
+        <defNames>
+            <li>CCP_HIDLEDLight</li>
+            <li>CCP_HIDLEDLight_Red</li>
+            <li>CCP_HIDLEDLight_Green</li>
+            <li>CCP_HIDLEDLight_Blue</li>
+            <li>CCP_HIDLEDLight_Yellow</li>
+            <li>CCP_HIDLEDLight_Pink</li>
+            <li>CCP_HIDLEDLight_Violet</li>
+            <li>CCP_HIDLEDLight_Teal</li>
+        </defNames>
+        <designationCategory>LEDLights</designationCategory>
+        <emulateStuff>true</emulateStuff>
+        <preview>false</preview>
+        <!--<debug>true</debug>-->
+    </ArchitectSense.DesignationSubCategoryDef>
+	
+    <ArchitectSense.DesignationSubCategoryDef>
+        <defName>SubCategory_WRHIDLEDLights</defName>
+        <label>wide range HID LED lights</label>
+        <description>Power-saving LED light for larger areas.</description>
+        <defNames>
+            <li>CCP_WRHIDLEDLight</li>
+            <li>CCP_WRHIDLEDLight_Red</li>
+            <li>CCP_WRHIDLEDLight_Green</li>
+            <li>CCP_WRHIDLEDLight_Blue</li>
+            <li>CCP_WRHIDLEDLight_Yellow</li>
+            <li>CCP_WRHIDLEDLight_Pink</li>
+            <li>CCP_WRHIDLEDLight_Violet</li>
+            <li>CCP_WRHIDLEDLight_Teal</li>
+        </defNames>
+        <designationCategory>LEDLights</designationCategory>
+        <emulateStuff>true</emulateStuff>
+        <preview>false</preview>
+        <!--<debug>true</debug>-->
+    </ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+        <defName>SubCategory_LEDWallLights</defName>
+        <label>LED wall lights</label>
+        <description>Power-saving LED wall light.</description>
+        <defNames>
+            <li>CCP_LEDWallLight</li>
+            <li>CCP_LEDWallLight_Red</li>
+            <li>CCP_LEDWallLight_Green</li>
+            <li>CCP_LEDWallLight_Blue</li>
+            <li>CCP_LEDWallLight_Yellow</li>
+            <li>CCP_LEDWallLight_Pink</li>
+            <li>CCP_LEDWallLight_Violet</li>
+            <li>CCP_LEDWallLight_Teal</li>
+        </defNames>
+        <designationCategory>LEDLights</designationCategory>
+        <emulateStuff>true</emulateStuff>
+        <preview>false</preview>
+        <!--<debug>true</debug>-->
+    </ArchitectSense.DesignationSubCategoryDef>
+	
+	<ArchitectSense.DesignationSubCategoryDef>
+        <defName>SubCategory_WRLEDWallLights</defName>
+        <label>wide range LED wall lights</label>
+        <description>Power-saving LED wall light.</description>
+        <defNames>
+            <li>CCP_WRLEDWallLight</li>
+            <li>CCP_WRLEDWallLight_Red</li>
+            <li>CCP_WRLEDWallLight_Green</li>
+            <li>CCP_WRLEDWallLight_Blue</li>
+            <li>CCP_WRLEDWallLight_Yellow</li>
+            <li>CCP_WRLEDWallLight_Pink</li>
+            <li>CCP_WRLEDWallLight_Violet</li>
+            <li>CCP_WRLEDWallLight_Teal</li>
+        </defNames>
+        <designationCategory>LEDLights</designationCategory>
+        <emulateStuff>true</emulateStuff>
+        <preview>false</preview>
+        <!--<debug>true</debug>-->
+    </ArchitectSense.DesignationSubCategoryDef>
+</Defs>

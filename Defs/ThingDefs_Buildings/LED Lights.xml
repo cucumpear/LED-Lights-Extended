@@ -8,14 +8,14 @@
     <category>Building</category>
 	<minifiedDef>MinifiedFurniture</minifiedDef>
 	<graphicData>
-       <texPath>LED_Lamp</texPath>
+       <texPath>Lights/LED_Lamp</texPath>
        <graphicClass>Graphic_Single</graphicClass>
        <shaderType>Transparent</shaderType>
     </graphicData>
     <blueprintGraphicData>
-    <texPath>LED_Lamp</texPath>
+    <texPath>Lights/LED_Lamp</texPath>
     </blueprintGraphicData>
-    <uiIconPath>LED_Lamp_MenuIcon</uiIconPath>
+    <uiIconPath>Lights/LED_Lamp_MenuIcon</uiIconPath>
     <building>
 	 <isInert>true</isInert>
       <ignoreNeedsPower>false</ignoreNeedsPower>
@@ -80,7 +80,7 @@
     <defName>CCP_LEDLight_Red</defName>
     <label>LED light (red)</label>
     <description>Power-saving LED light that glows red.</description>
-    <uiIconPath>LED_LampR_MenuIcon</uiIconPath>
+    <uiIconPath>Lights/LED_LampR_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>9</glowRadius>
@@ -94,7 +94,7 @@
     <defName>CCP_LEDLight_Green</defName>
     <label>LED light (green)</label>
     <description>Power-saving LED light that glows green.</description>
-    <uiIconPath>LED_LampG_MenuIcon</uiIconPath>
+    <uiIconPath>Lights/LED_LampG_MenuIcon</uiIconPath>
     <comps>   
       <li Class="CompProperties_Glower">
         <glowRadius>9</glowRadius>
@@ -108,7 +108,7 @@
     <defName>CCP_LEDLight_Blue</defName>
     <label>LED light (blue)</label>
     <description>Power-saving LED light that glows blue.</description>
-    <uiIconPath>LED_LampB_MenuIcon</uiIconPath>
+    <uiIconPath>Lights/LED_LampB_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>8.5</glowRadius>
@@ -122,7 +122,7 @@
     <defName>CCP_LEDLight_Yellow</defName>
     <label>LED light (yellow)</label>
     <description>Power-saving LED light that glows yellow.</description>
-    <uiIconPath>LED_LampY_MenuIcon</uiIconPath>
+    <uiIconPath>Lights/LED_LampY_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>5.6</glowRadius>
@@ -136,7 +136,7 @@
     <defName>CCP_LEDLight_Pink</defName>
     <label>LED light (pink)</label>
     <description>Power-saving LED light that glows pink.</description>
-    <uiIconPath>LED_LampP_MenuIcon</uiIconPath>
+    <uiIconPath>Lights/LED_LampP_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>5.6</glowRadius>
@@ -150,7 +150,7 @@
     <defName>CCP_LEDLight_Violet</defName>
     <label>LED light (violet)</label>
     <description>Power-saving LED light that glows violet.</description>
-    <uiIconPath>LED_LampV_MenuIcon</uiIconPath>
+    <uiIconPath>Lights/LED_LampV_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>6.5</glowRadius>
@@ -165,7 +165,7 @@
     <defName>CCP_LEDLight_Teal</defName>
     <label>LED light (teal)</label>
     <description>Power-saving LED light that glows teal.</description>
-    <uiIconPath>LED_LampT_MenuIcon</uiIconPath>
+    <uiIconPath>Lights/LED_LampT_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>7</glowRadius>
@@ -178,6 +178,13 @@
       <!-- ======================Wide Range LED Light========================= -->
 	  
 <ThingDef Abstract="True" Name="CCP_WideRangeLEDLightBase" ParentName="CCP_BaseLEDLight">
+	<graphicData>
+       <texPath>WRLights/WRLED_Lamp</texPath>
+    </graphicData>
+    <blueprintGraphicData>
+    <texPath>WRLights/WRLED_Lamp</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>WRLights/WRLED_Lamp_MenuIcon</uiIconPath>
     <costList>
       <Steel>15</Steel>
       <Silver>45</Silver>
@@ -211,7 +218,7 @@
     <defName>CCP_WRLEDLight_Red</defName>
     <label>wide range LED light (red)</label>
     <description>Power-saving LED light that glows red.</description>
-    <uiIconPath>LED_LampR_MenuIcon</uiIconPath>
+    <uiIconPath>WRLights/WRLED_LampR_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>17</glowRadius>
@@ -225,7 +232,7 @@
     <defName>CCP_WRLEDLight_Green</defName>
     <label>wide range LED light (green)</label>
     <description>Power-saving LED light that glows green.</description>
-    <uiIconPath>LED_LampG_MenuIcon</uiIconPath>
+    <uiIconPath>WRLights/WRLED_LampG_MenuIcon</uiIconPath>
     <comps>   
       <li Class="CompProperties_Glower">
         <glowRadius>14.6</glowRadius>
@@ -239,7 +246,7 @@
     <defName>CCP_WRLEDLight_Blue</defName>
     <label>wide range LED light (blue)</label>
     <description>Power-saving LED light that glows blue.</description>
-    <uiIconPath>LED_LampB_MenuIcon</uiIconPath>
+    <uiIconPath>WRLights/WRLED_LampB_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>12.3</glowRadius>
@@ -253,7 +260,7 @@
     <defName>CCP_WRLEDLight_Yellow</defName>
     <label>wide range LED light (yellow)</label>
     <description>Power-saving LED light that glows yellow.</description>
-    <uiIconPath>LED_LampY_MenuIcon</uiIconPath>
+    <uiIconPath>WRLights/WRLED_LampY_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>8.5</glowRadius>
@@ -267,7 +274,7 @@
     <defName>CCP_WRLEDLight_Pink</defName>
     <label>wide range LED light (pink)</label>
     <description>Power-saving LED light that glows pink.</description>
-    <uiIconPath>LED_LampP_MenuIcon</uiIconPath>
+    <uiIconPath>WRLights/WRLED_LampP_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>8.5</glowRadius>
@@ -281,7 +288,7 @@
     <defName>CCP_WRLEDLight_Violet</defName>
     <label>wide range LED light (violet)</label>
     <description>Power-saving LED light that glows violet.</description>
-    <uiIconPath>LED_LampV_MenuIcon</uiIconPath>
+    <uiIconPath>WRLights/WRLED_LampV_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>10.3</glowRadius>
@@ -296,7 +303,7 @@
     <defName>CCP_WRLEDLight_Teal</defName>
     <label>wide range LED light (teal)</label>
     <description>Power-saving LED light that glows teal.</description>
-    <uiIconPath>LED_LampT_MenuIcon</uiIconPath>
+    <uiIconPath>WRLights/WRLED_LampT_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>11</glowRadius>
@@ -311,14 +318,14 @@
 
   <ThingDef Abstract="True" Name="CCP_HIDLEDLightBase" ParentName="CCP_BaseLEDLight">
     <graphicData>
-       <texPath>HID LED_Lamp</texPath>
+       <texPath>HIDLights/HID LED_Lamp</texPath>
        <graphicClass>Graphic_Single</graphicClass>
        <shaderType>Transparent</shaderType>
     </graphicData>
     <blueprintGraphicData>
-    <texPath>HID LED_Lamp</texPath>
+    <texPath>HIDLights/HID LED_Lamp</texPath>
     </blueprintGraphicData>
-    <uiIconPath>HID LED_Lamp_MenuIcon</uiIconPath>
+    <uiIconPath>HIDLights/HID LED_Lamp_MenuIcon</uiIconPath>
     <building>
 	 <isInert>true</isInert>
       <ignoreNeedsPower>false</ignoreNeedsPower>
@@ -368,7 +375,7 @@
     <defName>CCP_HIDLEDLight_Red</defName>
     <label>HID LED light (red)</label>
     <description>Power-saving LED light for larger areas that glows red.</description>
-    <uiIconPath>HID LED_LampR_MenuIcon</uiIconPath>
+    <uiIconPath>HIDLights/HID LED_LampR_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>23</glowRadius>
@@ -382,7 +389,7 @@
     <defName>CCP_HIDLEDLight_Green</defName>
     <label>HID LED light (green)</label>
     <description>Power-saving LED light for larger areas that glows green.</description>
-    <uiIconPath>HID LED_LampG_MenuIcon</uiIconPath>
+    <uiIconPath>HIDLights/HID LED_LampG_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>20</glowRadius>
@@ -396,7 +403,7 @@
     <defName>CCP_HIDLEDLight_Blue</defName>
     <label>HID LED light (blue)</label>
     <description>Power-saving LED light for larger areas that glows blue.</description>
-    <uiIconPath>HID LED_LampB_MenuIcon</uiIconPath>
+    <uiIconPath>HIDLights/HID LED_LampB_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>18</glowRadius>
@@ -411,7 +418,7 @@
     <defName>CCP_HIDLEDLight_Yellow</defName>
     <label>HID LED light (yellow)</label>
     <description>Power-saving LED light for larger areas that glows yellow.</description>
-    <uiIconPath>HID LED_LampY_MenuIcon</uiIconPath>
+    <uiIconPath>HIDLights/HID LED_LampY_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>13.5</glowRadius>
@@ -425,7 +432,7 @@
     <defName>CCP_HIDLEDLight_Pink</defName>
     <label>HID LED light (pink)</label>
     <description>Power-saving LED light for larger areas that glows pink.</description>
-    <uiIconPath>HID LED_LampP_MenuIcon</uiIconPath>
+    <uiIconPath>HIDLights/HID LED_LampP_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>13</glowRadius>
@@ -439,7 +446,7 @@
     <defName>CCP_HIDLEDLight_Violet</defName>
     <label>HID LED light (violet)</label>
     <description>Power-saving LED light for larger areas that glows violet.</description>
-    <uiIconPath>HID LED_LampV_MenuIcon</uiIconPath>
+    <uiIconPath>HIDLights/HID LED_LampV_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>15</glowRadius>
@@ -453,7 +460,7 @@
     <defName>CCP_HIDLEDLight_Teal</defName>
     <label>HID LED light (teal)</label>
     <description>Power-saving LED light for larger areas that glows teal.</description>
-    <uiIconPath>HID LED_LampT_MenuIcon</uiIconPath>
+    <uiIconPath>HIDLights/HID LED_LampT_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>16</glowRadius>
@@ -470,15 +477,15 @@
     <label>square HID LED light</label>
     <description>Power-saving LED light for larger areas.</description>
     <graphicData>
-       <texPath>HID_LED_Square</texPath>
+       <texPath>HIDLights/HID_LED_Square</texPath>
        <graphicClass>Graphic_Single</graphicClass>
        <shaderType>Transparent</shaderType>
       <drawSize>(2,2)</drawSize>
     </graphicData>
     <blueprintGraphicData>
-    <texPath>HID_LED_Square</texPath>
+    <texPath>HIDLights/HID_LED_Square</texPath>
     </blueprintGraphicData>
-    <uiIconPath>HID_LED_Square_MenuIcon</uiIconPath>
+    <uiIconPath>HIDLights/HID_LED_Square_MenuIcon</uiIconPath>
     <Size>(2,2)</Size>
     <comps>
       <li Class="CompProperties_Glower">
@@ -493,14 +500,14 @@
 
   <ThingDef Abstract="True" Name="CCP_WideRangeHIDLEDLightBase" ParentName="CCP_BaseLEDLight">
     <graphicData>
-       <texPath>HID LED_Lamp</texPath>
+       <texPath>WRHIDLights/WRHID LED_Lamp</texPath>
        <graphicClass>Graphic_Single</graphicClass>
        <shaderType>Transparent</shaderType>
     </graphicData>
     <blueprintGraphicData>
-    <texPath>HID LED_Lamp</texPath>
+    <texPath>WRHIDLights/WRHID LED_Lamp</texPath>
     </blueprintGraphicData>
-    <uiIconPath>HID LED_Lamp_MenuIcon</uiIconPath>
+    <uiIconPath>WRHIDLights/WRHID LED_Lamp_MenuIcon</uiIconPath>
     <building>
 	 <isInert>true</isInert>
       <ignoreNeedsPower>false</ignoreNeedsPower>
@@ -550,7 +557,7 @@
     <defName>CCP_WRHIDLEDLight_Red</defName>
     <label>wide range HID LED light (red)</label>
     <description>Power-saving LED light for huge areas that glows red.</description>
-    <uiIconPath>HID LED_LampR_MenuIcon</uiIconPath>
+    <uiIconPath>WRHIDLights/WRHID LED_LampR_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>35</glowRadius>
@@ -564,7 +571,7 @@
     <defName>CCP_WRHIDLEDLight_Green</defName>
     <label>wide range HID LED light (green)</label>
     <description>Power-saving LED light for huge areas that glows green.</description>
-    <uiIconPath>HID LED_LampG_MenuIcon</uiIconPath>
+    <uiIconPath>WRHIDLights/WRHID LED_LampG_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>30</glowRadius>
@@ -578,7 +585,7 @@
     <defName>CCP_WRHIDLEDLight_Blue</defName>
     <label>wide range HID LED light (blue)</label>
     <description>Power-saving LED light for huge areas that glows blue.</description>
-    <uiIconPath>HID LED_LampB_MenuIcon</uiIconPath>
+    <uiIconPath>WRHIDLights/WRHID LED_LampB_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>26</glowRadius>
@@ -593,7 +600,7 @@
     <defName>CCP_WRHIDLEDLight_Yellow</defName>
     <label>wide range HID LED light (yellow)</label>
     <description>Power-saving LED light for huge areas that glows yellow.</description>
-    <uiIconPath>HID LED_LampY_MenuIcon</uiIconPath>
+    <uiIconPath>WRHIDLights/WRHID LED_LampY_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>21.7</glowRadius>
@@ -607,7 +614,7 @@
     <defName>CCP_WRHIDLEDLight_Pink</defName>
     <label>wide range HID LED light (pink)</label>
     <description>Power-saving LED light for huge areas that glows pink.</description>
-    <uiIconPath>HID LED_LampP_MenuIcon</uiIconPath>
+    <uiIconPath>WRHIDLights/WRHID LED_LampP_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>21.5</glowRadius>
@@ -621,7 +628,7 @@
     <defName>CCP_WRHIDLEDLight_Violet</defName>
     <label>wide range HID LED light (violet)</label>
     <description>Power-saving LED light for huge areas that glows violet.</description>
-    <uiIconPath>HID LED_LampV_MenuIcon</uiIconPath>
+    <uiIconPath>WRHIDLights/WRHID LED_LampV_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>22</glowRadius>
@@ -635,7 +642,7 @@
     <defName>CCP_WRHIDLEDLight_Teal</defName>
     <label>wide range HID LED light (teal)</label>
     <description>Power-saving LED light for huge areas that glows teal.</description>
-    <uiIconPath>HID LED_LampT_MenuIcon</uiIconPath>
+    <uiIconPath>WRHIDLights/WRHID LED_LampT_MenuIcon</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>24</glowRadius>
@@ -652,15 +659,15 @@
     <label>wide range square HID LED light</label>
     <description>Power-saving LED light for huge areas.</description>
     <graphicData>
-       <texPath>HID_LED_Square</texPath>
+       <texPath>WRHIDLights/WRHID_LED_Square</texPath>
        <graphicClass>Graphic_Single</graphicClass>
        <shaderType>Transparent</shaderType>
       <drawSize>(2,2)</drawSize>
     </graphicData>
     <blueprintGraphicData>
-    <texPath>HID_LED_Square</texPath>
+    <texPath>WRHIDLights/WRHID_LED_Square</texPath>
     </blueprintGraphicData>
-    <uiIconPath>HID_LED_Square_MenuIcon</uiIconPath>
+    <uiIconPath>WRHIDLights/WRHID_LED_Square_MenuIcon</uiIconPath>
     <Size>(2,2)</Size>
     <comps>
       <li Class="CompProperties_Glower">

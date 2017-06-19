@@ -11,8 +11,8 @@
 		<prerequisites>
 			<li>Electricity</li>
 		</prerequisites>
-		<researchViewX>4.5</researchViewX>
-		<researchViewY>1</researchViewY>
+<!-- 		<researchViewX>4.5</researchViewX>
+		<researchViewY>1</researchViewY> -->
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -25,8 +25,8 @@
 			<li>CCP_LEDLights</li>
 			<li>ColoredLights</li>
 		</prerequisites>
-		<researchViewX>5</researchViewX>
-		<researchViewY>1</researchViewY>
+<!-- 		<researchViewX>5</researchViewX>
+		<researchViewY>1</researchViewY> -->
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -38,8 +38,8 @@
 		<prerequisites>
 			<li>CCP_LEDGrowLights</li>
 		</prerequisites>
-		<researchViewX>5.5</researchViewX>
-		<researchViewY>1</researchViewY>
+<!-- 		<researchViewX>5.5</researchViewX>
+		<researchViewY>1</researchViewY> -->
 	</ResearchProjectDef>
 
 </Defs>
