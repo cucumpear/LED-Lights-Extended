@@ -140,4 +140,36 @@
         <preview>false</preview>
         <!--<debug>true</debug>-->
     </ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+        <defName>SubCategory_LEDGrowLights</defName>
+        <label>automatic growing lights</label>
+        <description>Power-saving LED growing lights that turn off at night automatically.</description>
+        <defNames>
+            <li>CCP_LEDGrowLight</li>
+            <li>CCP_LEDGrowLightM</li>
+            <li>CCP_LEDGrowLightS</li>
+            <li>CCP_LEDRopeGrowLight</li>
+        </defNames>
+        <designationCategory>LEDLights</designationCategory>
+        <emulateStuff>true</emulateStuff>
+        <preview>false</preview>
+        <!--<debug>true</debug>-->
+    </ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+        <defName>SubCategory_MLEDGrowLights</defName>
+        <label>manual growing lights</label>
+        <description>Power-saving LED growing lights that must be switched on and off manually.</description>
+        <defNames>
+            <li>CCP_MLEDGrowLight</li>
+            <li>CCP_MLEDGrowLightM</li>
+            <li>CCP_MLEDGrowLightS</li>
+            <li>CCP_MLEDRopeGrowLight</li>
+        </defNames>
+        <designationCategory>LEDLights</designationCategory>
+        <emulateStuff>true</emulateStuff>
+        <preview>false</preview>
+        <!--<debug>true</debug>-->
+    </ArchitectSense.DesignationSubCategoryDef>
 </Defs>
