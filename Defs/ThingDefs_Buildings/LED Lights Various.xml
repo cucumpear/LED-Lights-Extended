@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Buildings>
+<Defs>
  
     <!-- ======================Base========================= -->
 
@@ -18,7 +18,6 @@
     <uiIconPath>Lights/LED_Lamp_MenuIcon</uiIconPath>
     <building>
 	 <isInert>true</isInert>
-      <ignoreNeedsPower>false</ignoreNeedsPower>
       <isEdifice>false</isEdifice>
     </building>
     <costList>
@@ -39,7 +38,7 @@
       <Flammability>1.0</Flammability>
       <Beauty>2</Beauty>
     </statBases>
-    <DesignationCategory>LEDLights</DesignationCategory>
+    <designationCategory>LEDLights</designationCategory>
     <comps>
       <li Class="CompProperties_Flickable"/>
     </comps>
@@ -648,7 +647,6 @@
     <uiIconPath>HIDLights/HID LED_Lamp_MenuIcon</uiIconPath>
     <building>
 	 <isInert>true</isInert>
-      <ignoreNeedsPower>false</ignoreNeedsPower>
       <isEdifice>false</isEdifice>
     </building>
     <costList>
@@ -660,7 +658,7 @@
     <statBases>
       <Mass>2</Mass>
     </statBases>
-    <DesignationCategory>LEDLights</DesignationCategory>
+    <designationCategory>LEDLights</designationCategory>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -807,7 +805,6 @@
     <uiIconPath>WRHIDLights/WRHID LED_Lamp_MenuIcon</uiIconPath>
     <building>
 	 <isInert>true</isInert>
-      <ignoreNeedsPower>false</ignoreNeedsPower>
       <isEdifice>false</isEdifice>
     </building>
     <costList>
@@ -819,7 +816,7 @@
     <statBases>
       <Mass>2</Mass>
     </statBases>
-    <DesignationCategory>LEDLights</DesignationCategory>
+    <designationCategory>LEDLights</designationCategory>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -965,7 +962,7 @@
     <texPath>HIDLights/HID_LED_Square</texPath>
     </blueprintGraphicData>
     <uiIconPath>HIDLights/HID_LED_Square_MenuIcon</uiIconPath>
-    <Size>(2,2)</Size>
+    <size>(2,2)</size>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>12</glowRadius>
@@ -989,7 +986,7 @@
     <texPath>WRHIDLights/WRHID_LED_Square</texPath>
     </blueprintGraphicData>
     <uiIconPath>WRHIDLights/WRHID_LED_Square_MenuIcon</uiIconPath>
-    <Size>(2,2)</Size>
+    <size>(2,2)</size>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>22</glowRadius>
@@ -999,4 +996,4 @@
     <specialDisplayRadius>0</specialDisplayRadius>
   </ThingDef>
 
-</Buildings>
+</Defs>

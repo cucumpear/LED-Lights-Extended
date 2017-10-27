@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Buildings>
+<Defs>
   
 
   <ThingDef Abstract="True" Name="CCP_LEDGrowLightBase" ParentName="CCP_BaseLEDLight">
     <thingClass>Building_SunLamp</thingClass>
     <building>
 	 <isInert>true</isInert>
-      <ignoreNeedsPower>false</ignoreNeedsPower>
       <isEdifice>false</isEdifice>
     </building>
     <tickerType>Rare</tickerType>
@@ -15,7 +14,7 @@
     </statBases>
     <altitudeLayer>MoteOverhead</altitudeLayer>
     <passability>Standable</passability>
-    <DesignationCategory>LEDLights</DesignationCategory>
+    <designationCategory>LEDLights</designationCategory>
     <researchPrerequisites>
       <li>CCP_LEDGrowLights</li>
       <li>ColoredLights</li>
@@ -275,7 +274,6 @@
     <uiIconPath>LED_Med_Lamp_MenuIcon</uiIconPath>
     <building>
 	 <isInert>true</isInert>
-      <ignoreNeedsPower>false</ignoreNeedsPower>
       <isEdifice>false</isEdifice>
     </building>
     <statBases>
@@ -284,7 +282,7 @@
     </statBases>
     <altitudeLayer>MoteOverhead</altitudeLayer>
     <passability>Standable</passability>
-    <DesignationCategory>LEDLights</DesignationCategory>
+    <designationCategory>LEDLights</designationCategory>
     <costList>
       <Steel>20</Steel>
       <Silver>80</Silver>
@@ -322,4 +320,4 @@
   </ThingDef>
 
 
-</Buildings>
+</Defs>

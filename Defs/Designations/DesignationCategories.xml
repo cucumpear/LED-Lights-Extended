@@ -3,7 +3,7 @@
 
 
   <DesignationCategoryDef>
-    <DefName>LEDLights</DefName>
+    <defName>LEDLights</defName>
     <label>LED lighting</label>
     <description>Power-saving lighting choices.</description>
     <order>28</order>
