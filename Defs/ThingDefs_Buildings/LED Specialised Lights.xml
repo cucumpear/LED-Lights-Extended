@@ -19,6 +19,7 @@
       <li>CCP_LEDGrowLights</li>
       <li>ColoredLights</li>
     </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   </ThingDef>
 
 
@@ -317,6 +318,7 @@
     <researchPrerequisites>
       <li>CCP_LEDMedLights</li>
     </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
   </ThingDef>
 
 

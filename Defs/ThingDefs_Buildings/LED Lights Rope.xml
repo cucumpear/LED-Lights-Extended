@@ -51,6 +51,7 @@
       <li>Electricity</li>
       <li>CCP_LEDLights</li>
     </researchPrerequisites>
+    <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
   </ThingDef>
 
   <ThingDef ParentName="CCP_LEDRopeLightBase">
@@ -251,6 +252,7 @@
     <researchPrerequisites>
       <li>CCP_LEDGrowLights</li>
     </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 </ThingDef>
 
 <ThingDef ParentName="CCP_LEDRopeLightBase">
@@ -279,6 +281,7 @@
     <researchPrerequisites>
       <li>CCP_LEDGrowLights</li>
     </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 </ThingDef>
   
 </Defs>

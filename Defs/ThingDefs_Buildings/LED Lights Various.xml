@@ -45,6 +45,7 @@
     <researchPrerequisites>
       <li>CCP_LEDLights</li>
     </researchPrerequisites>
+    <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
   </ThingDef>
 
  
