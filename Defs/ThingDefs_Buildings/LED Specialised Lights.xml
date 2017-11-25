@@ -2,7 +2,7 @@
 <Defs>
   
 
-  <ThingDef Abstract="True" Name="CCP_LEDGrowLightBase" ParentName="CCP_BaseLEDLight">
+  <ThingDef Abstract="True" Name="CCP_LEDGrowLightBase" ParentName="CCP_BaseLED">
     <thingClass>Building_SunLamp</thingClass>
     <building>
 	 <isInert>true</isInert>
@@ -259,7 +259,7 @@
   <!-- Medical Lights -->
 
 
-  <ThingDef ParentName="CCP_BaseLEDLight">
+  <ThingDef ParentName="CCP_BaseLED">
     <defName>CCP_LEDMedLight</defName>
     <label>LED medical light</label>
     <description>Lights a small area very brightly. The spectrum also inhibits bacterial growth, perfect for medical rooms.</description>

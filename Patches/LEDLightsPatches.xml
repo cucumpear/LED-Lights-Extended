@@ -27,4 +27,19 @@
 		<li>CCP_LEDMedLight</li>
 	  </value>
 	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>*/ThingDef[defName = "Bedroll"]/comps/li[1]/linkableFacilities</xpath>
+	  <value>
+		<li>CCP_LEDMedLight</li>
+	  </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>*/ThingDef[defName = "BedrollDouble"]/comps/li[1]/linkableFacilities</xpath>
+	  <value>
+		<li>CCP_LEDMedLight</li>
+	  </value>
+	</Operation>
+	
 </Patch>
