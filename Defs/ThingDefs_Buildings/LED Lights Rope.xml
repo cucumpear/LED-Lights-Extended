@@ -47,6 +47,7 @@
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>LEDLights</designationCategory>
     <constructEffect>ConstructMetal</constructEffect>
+    <clearBuildingArea>false</clearBuildingArea>
     <researchPrerequisites>
       <li>Electricity</li>
       <li>CCP_LEDLights</li>

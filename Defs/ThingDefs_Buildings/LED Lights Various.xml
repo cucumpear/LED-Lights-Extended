@@ -32,6 +32,7 @@
 	<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	<constructEffect>ConstructMetal</constructEffect>
+    <clearBuildingArea>false</clearBuildingArea>
     <statBases>
       <MaxHitPoints>35</MaxHitPoints>
       <WorkToBuild>80</WorkToBuild>
