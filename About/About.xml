@@ -2,9 +2,7 @@
 <ModMetaData>
   <name>LED Lights</name>
   <author>cucumpear</author>
-  <targetVersion>0.18.0</targetVersion>
-  <description>
-A range of power-saving LED lights. A full rewrite of Loki88's LED Lights mod, which has been discontinued and can be found on the Ludeon forum. Textures were taken or adapted from Loki's mod.
-Includes ceiling lights, wall lights, rope lights, a floor rope light, growing lamps and a medical lamp.
-</description>
+  <targetVersion>1.0.0</targetVersion>
+  <description>A range of power-saving LED lights. A full rewrite of Loki88's LED Lights mod, which has been discontinued and can be found on the Ludeon forum. Textures were taken or adapted from Loki's mod.
+Includes ceiling lights, wall lights, rope lights, a floor rope light, growing lamps and a medical lamp.</description>
 </ModMetaData>

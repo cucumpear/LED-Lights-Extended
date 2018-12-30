@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DesignatorDropdownGroupDef>
+    <defName>CCP_LEDRopeLights</defName>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>CCP_LEDWallLights</defName>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>CCP_LEDWRWallLights</defName>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>CCP_LEDCeilLights</defName>
+  </DesignatorDropdownGroupDef>  
+  
+  <DesignatorDropdownGroupDef>
+    <defName>CCP_LEDWRCeilLights</defName>
+  </DesignatorDropdownGroupDef>
+  
+    <DesignatorDropdownGroupDef>
+    <defName>CCP_HIDCeilLights</defName>
+  </DesignatorDropdownGroupDef>
+
+    <DesignatorDropdownGroupDef>
+    <defName>CCP_WRHIDCeilLights</defName>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>CCP_ManGrowingLights</defName>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>CCP_AutoGrowingLights</defName>
+  </DesignatorDropdownGroupDef>
+
+</Defs>

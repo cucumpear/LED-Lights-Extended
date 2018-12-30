@@ -10,7 +10,7 @@
     </building>
     <tickerType>Rare</tickerType>
     <statBases>
-      <Mass>1</Mass>
+      <Mass>2</Mass>
     </statBases>
     <altitudeLayer>MoteOverhead</altitudeLayer>
     <passability>Standable</passability>
@@ -30,19 +30,23 @@
     <graphicData>
        <texPath>LED_Grow_LampL</texPath>
        <graphicClass>Graphic_Single</graphicClass>
-       <shaderType>Transparent</shaderType>
+       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <blueprintGraphicData>
-    <texPath>LED_Grow_LampL</texPath>
-    </blueprintGraphicData>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Blueprints/BP_HID_LED_Lamp</texPath>
+        <shaderType>Cutout</shaderType>
+      </blueprintGraphicData>
+    </building>
     <uiIconPath>LED_Grow_LampL_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_AutoGrowingLights</designatorDropdown>
     <statBases>
       <WorkToBuild>1200</WorkToBuild>
     </statBases>
     <costList>
       <Steel>75</Steel>
       <Silver>270</Silver>
-      <Component>5</Component>
+      <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -72,19 +76,23 @@
     <graphicData>
        <texPath>LED_Grow_LampM</texPath>
        <graphicClass>Graphic_Single</graphicClass>
-       <shaderType>Transparent</shaderType>
+       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <blueprintGraphicData>
-    <texPath>LED_Grow_LampM</texPath>
-    </blueprintGraphicData>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Blueprints/BP_LED_Square</texPath>
+        <shaderType>Cutout</shaderType>
+      </blueprintGraphicData>
+  </building>
     <uiIconPath>LED_Grow_LampM_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_AutoGrowingLights</designatorDropdown>
     <statBases>
       <WorkToBuild>700</WorkToBuild>
     </statBases>
     <costList>
       <Steel>30</Steel>
       <Silver>120</Silver>
-      <Component>2</Component>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -93,7 +101,7 @@
       </li>
       <li Class="CompProperties_Glower">
         <overlightRadius>5</overlightRadius>
-        <glowRadius>12</glowRadius>
+        <glowRadius>10</glowRadius>
         <glowColor>(255,190,255,0)</glowColor>
       </li>
       <li Class="CompProperties_Schedule">
@@ -114,20 +122,24 @@
     <graphicData>
        <texPath>LED_Grow_LampS</texPath>
        <graphicClass>Graphic_Single</graphicClass>
-       <shaderType>Transparent</shaderType>
+       <shaderType>TransparentPostLight</shaderType>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
-    <blueprintGraphicData>
-    <texPath>LED_Grow_LampS</texPath>
-    </blueprintGraphicData>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Blueprints/BP_LED_Lamp</texPath>
+        <shaderType>Cutout</shaderType>
+      </blueprintGraphicData>
+    </building>
     <uiIconPath>LED_Grow_LampS_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_AutoGrowingLights</designatorDropdown>
     <statBases>
       <WorkToBuild>300</WorkToBuild>
     </statBases>
     <costList>
       <Steel>20</Steel>
       <Silver>80</Silver>
-      <Component>1</Component>
+      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -136,7 +148,7 @@
       </li>
       <li Class="CompProperties_Glower">
         <overlightRadius>4.0</overlightRadius>
-        <glowRadius>10</glowRadius>
+        <glowRadius>8</glowRadius>
         <glowColor>(255,190,255,0)</glowColor>
       </li>
       <li Class="CompProperties_Schedule">
@@ -156,19 +168,23 @@
     <graphicData>
        <texPath>LED_Grow_LampL</texPath>
        <graphicClass>Graphic_Single</graphicClass>
-       <shaderType>Transparent</shaderType>
+       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <blueprintGraphicData>
-    <texPath>LED_Grow_LampL</texPath>
-    </blueprintGraphicData>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Blueprints/BP_HID_LED_Lamp</texPath>
+        <shaderType>Cutout</shaderType>
+      </blueprintGraphicData>
+    </building>
     <uiIconPath>LED_Grow_LampL_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_ManGrowingLights</designatorDropdown>
     <statBases>
       <WorkToBuild>1200</WorkToBuild>
     </statBases>
     <costList>
       <Steel>75</Steel>
       <Silver>270</Silver>
-      <Component>5</Component>
+      <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -177,7 +193,7 @@
       </li>
       <li Class="CompProperties_Glower">
         <overlightRadius>7.0</overlightRadius>
-        <glowRadius>16</glowRadius>
+        <glowRadius>14</glowRadius>
         <glowColor>(255,190,255,0)</glowColor>
       </li>
     </comps>
@@ -192,19 +208,23 @@
     <graphicData>
        <texPath>LED_Grow_LampM</texPath>
        <graphicClass>Graphic_Single</graphicClass>
-       <shaderType>Transparent</shaderType>
+       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <blueprintGraphicData>
-    <texPath>LED_Grow_LampM</texPath>
-    </blueprintGraphicData>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Blueprints/BP_LED_Lamp</texPath>
+        <shaderType>Cutout</shaderType>
+      </blueprintGraphicData>
+    </building>
     <uiIconPath>LED_Grow_LampM_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_ManGrowingLights</designatorDropdown>
     <statBases>
       <WorkToBuild>700</WorkToBuild>
     </statBases>
     <costList>
       <Steel>30</Steel>
       <Silver>120</Silver>
-      <Component>2</Component>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -213,7 +233,7 @@
       </li>
       <li Class="CompProperties_Glower">
         <overlightRadius>5</overlightRadius>
-        <glowRadius>12</glowRadius>
+        <glowRadius>10</glowRadius>
         <glowColor>(255,190,255,0)</glowColor>
       </li>
     </comps>
@@ -228,20 +248,24 @@
     <graphicData>
        <texPath>LED_Grow_LampS</texPath>
        <graphicClass>Graphic_Single</graphicClass>
-       <shaderType>Transparent</shaderType>
+       <shaderType>TransparentPostLight</shaderType>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
-    <blueprintGraphicData>
-    <texPath>LED_Grow_LampS</texPath>
-    </blueprintGraphicData>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Blueprints/BP_LED_Square</texPath>
+        <shaderType>Cutout</shaderType>
+      </blueprintGraphicData>
+    </building>
     <uiIconPath>LED_Grow_LampS_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_ManGrowingLights</designatorDropdown>
     <statBases>
       <WorkToBuild>300</WorkToBuild>
     </statBases>
     <costList>
       <Steel>20</Steel>
       <Silver>80</Silver>
-      <Component>1</Component>
+      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -250,12 +274,15 @@
       </li>
       <li Class="CompProperties_Glower">
         <overlightRadius>4.0</overlightRadius>
-        <glowRadius>10</glowRadius>
+        <glowRadius>8</glowRadius>
         <glowColor>(255,190,255,0)</glowColor>
       </li>
     </comps>
     <specialDisplayRadius>2.9</specialDisplayRadius>
   </ThingDef>
+  
+  
+  
   <!-- Medical Lights -->
 
 
@@ -266,16 +293,16 @@
     <graphicData>
        <texPath>LED_Med_Lamp</texPath>
        <graphicClass>Graphic_Single</graphicClass>
-       <shaderType>Transparent</shaderType>
+       <shaderType>TransparentPostLight</shaderType>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
-    <blueprintGraphicData>
-    <texPath>LED_Med_Lamp</texPath>
-    </blueprintGraphicData>
     <uiIconPath>LED_Med_Lamp_MenuIcon</uiIconPath>
     <building>
 	 <isInert>true</isInert>
       <isEdifice>false</isEdifice>
+     <blueprintGraphicData>
+        <texPath>Blueprints/BP_LED_Square</texPath>
+     </blueprintGraphicData>
     </building>
     <statBases>
       <WorkToBuild>350</WorkToBuild>
@@ -287,7 +314,7 @@
     <costList>
       <Steel>20</Steel>
       <Silver>80</Silver>
-      <Component>1</Component>
+      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -296,7 +323,7 @@
       </li>
       <li Class="CompProperties_Glower">
         <overlightRadius>4.0</overlightRadius>
-        <glowRadius>10</glowRadius>
+        <glowRadius>8</glowRadius>
         <glowColor>(0,71,171,0)</glowColor>
       </li>
       <li Class="CompProperties_Facility">

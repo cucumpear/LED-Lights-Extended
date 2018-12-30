@@ -6,19 +6,23 @@
   <ThingDef Abstract="True" Name="CCP_BaseLED" ParentName="BuildingBase">
     <thingClass>Building</thingClass>
     <category>Building</category>
-	<minifiedDef>MinifiedFurniture</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+	<minifiedDef>MinifiedThing</minifiedDef>
 	<graphicData>
        <texPath>Lights/LED_Lamp</texPath>
        <graphicClass>Graphic_Single</graphicClass>
-       <shaderType>Transparent</shaderType>
+       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <blueprintGraphicData>
-    <texPath>Lights/LED_Lamp</texPath>
-    </blueprintGraphicData>
     <uiIconPath>Lights/LED_Lamp_MenuIcon</uiIconPath>
     <building>
 	 <isInert>true</isInert>
       <isEdifice>false</isEdifice>
+      <blueprintGraphicData>
+        <texPath>Blueprints/BP_LED_Lamp</texPath>
+        <shaderType>Cutout</shaderType>
+      </blueprintGraphicData>
     </building>
     <costList>
       <Steel>5</Steel>
@@ -29,11 +33,12 @@
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 	<rotatable>false</rotatable>
     <selectable>true</selectable>
-	<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	<constructEffect>ConstructMetal</constructEffect>
     <clearBuildingArea>false</clearBuildingArea>
     <statBases>
+	  <Mass>0.5</Mass>
       <MaxHitPoints>35</MaxHitPoints>
       <WorkToBuild>80</WorkToBuild>
       <Flammability>1.0</Flammability>
@@ -60,10 +65,11 @@
 	<graphicData>
        <texPath>LEDFloor_Lamp</texPath>
        <graphicClass>Graphic_Single</graphicClass>
-       <shaderType>Transparent</shaderType>
+       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
     <uiIconPath>RopeLight_MenuIcon</uiIconPath>
     <statBases>
+	  <Mass>0.5</Mass>
       <MaxHitPoints>20</MaxHitPoints>
       <WorkToBuild>50</WorkToBuild>
       <Flammability>0.5</Flammability>
@@ -96,23 +102,25 @@
     <graphicData>
        <texPath>WallLights/LED_Wall_Lamp</texPath>
        <graphicClass>Graphic_Single</graphicClass>
-       <shaderType>Transparent</shaderType>
+       <shaderType>TransparentPostLight</shaderType>
       <drawSize>(1,1)</drawSize>
     </graphicData>
-    <blueprintGraphicData>
-    <texPath>WallLights/LED_Wall_Lamp</texPath>
-    </blueprintGraphicData>
     <uiIconPath>WallLights/LED_Wall_Lamp_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWallLights</designatorDropdown>
     <thingClass>Building</thingClass>
     <category>Building</category>
-	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<minifiedDef>MinifiedThing</minifiedDef>
     <building>
 	 <isInert>true</isInert>
      <isEdifice>false</isEdifice>
+      <blueprintGraphicData>
+        <texPath>Blueprints/BP_LED_Wall</texPath>
+        <shaderType>Cutout</shaderType>
+      </blueprintGraphicData>
     </building>
     <statBases>
       <WorkToBuild>70</WorkToBuild>
-      <Mass>1</Mass>
+      <Mass>0.5</Mass>
     </statBases>
     <altitudeLayer>MoteOverhead</altitudeLayer>
     <passability>Standable</passability>
@@ -148,6 +156,7 @@
     <label>LED wall light (red)</label>
     <description>Power-saving LED wall light that glows red.</description>
     <uiIconPath>WallLights/LED_Wall_LampR_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWallLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
 	  <glowRadius>9</glowRadius>
@@ -162,6 +171,7 @@
     <label>LED wall light (green)</label>
     <description>Power-saving LED wall light that glows green.</description>
     <uiIconPath>WallLights/LED_Wall_LampG_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWallLights</designatorDropdown>
     <comps>   
       <li Class="CompProperties_Glower">
 	  <glowRadius>9</glowRadius>
@@ -176,6 +186,7 @@
     <label>LED wall light (blue)</label>
     <description>Power-saving LED wall light that glows blue.</description>
     <uiIconPath>WallLights/LED_Wall_LampB_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWallLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
 	  <glowRadius>8.5</glowRadius>
@@ -190,6 +201,7 @@
     <label>LED wall light (yellow)</label>
     <description>Power-saving LED wall light that glows yellow.</description>
     <uiIconPath>WallLights/LED_Wall_LampY_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWallLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
 	  <glowRadius>5.6</glowRadius>
@@ -204,6 +216,7 @@
     <label>LED wall light (pink)</label>
     <description>Power-saving LED wall light that glows pink.</description>
     <uiIconPath>WallLights/LED_Wall_LampP_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWallLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
 	  <glowRadius>5.6</glowRadius>
@@ -218,6 +231,7 @@
     <label>LED wall light (violet)</label>
     <description>Power-saving LED wall light that glows violet.</description>
     <uiIconPath>WallLights/LED_Wall_LampV_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWallLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
 	  <glowRadius>6.5</glowRadius>
@@ -233,6 +247,7 @@
     <label>LED wall light (teal)</label>
     <description>Power-saving LED wall light that glows teal.</description>
     <uiIconPath>WallLights/LED_Wall_LampT_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWallLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
 	  <glowRadius>7</glowRadius>
@@ -252,22 +267,24 @@
 	<graphicData>
        <texPath>WRWallLights/WRLED_Wall_Lamp</texPath>
        <graphicClass>Graphic_Single</graphicClass>
-       <shaderType>Transparent</shaderType>
+       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <blueprintGraphicData>
-		<texPath>WRWallLights/WRLED_Wall_Lamp</texPath>
-    </blueprintGraphicData>
     <uiIconPath>WRWallLights/WRLED_Wall_Lamp_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWRWallLights</designatorDropdown>
     <thingClass>Building</thingClass>
     <category>Building</category>
-	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<minifiedDef>MinifiedThing</minifiedDef>
     <building>
 	 <isInert>true</isInert>
      <isEdifice>false</isEdifice>
+     <blueprintGraphicData>
+        <texPath>Blueprints/BP_WRLED_Wall_Lamp</texPath>
+        <shaderType>Cutout</shaderType>
+      </blueprintGraphicData>
     </building>
     <statBases>
       <WorkToBuild>70</WorkToBuild>
-      <Mass>1</Mass>
+      <Mass>0.5</Mass>
     </statBases>
     <altitudeLayer>MoteOverhead</altitudeLayer>
     <passability>Standable</passability>
@@ -303,6 +320,7 @@
     <label>wide range LED wall light (red)</label>
     <description>Power-saving LED wall light that glows red.</description>
     <uiIconPath>WRWallLights/WRLED_Wall_LampR_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWRWallLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>17</glowRadius>
@@ -317,6 +335,7 @@
     <label>wide range LED wall light (green)</label>
     <description>Power-saving LED wall light that glows green.</description>
     <uiIconPath>WRWallLights/WRLED_Wall_LampG_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWRWallLights</designatorDropdown>
     <comps>   
       <li Class="CompProperties_Glower">
         <glowRadius>14.6</glowRadius>
@@ -331,6 +350,7 @@
     <label>wide range LED wall light (blue)</label>
     <description>Power-saving LED wall light that glows blue.</description>
     <uiIconPath>WRWallLights/WRLED_Wall_LampB_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWRWallLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>12.3</glowRadius>
@@ -345,6 +365,7 @@
     <label>wide range LED wall light (yellow)</label>
     <description>Power-saving LED wall light that glows yellow.</description>
     <uiIconPath>WRWallLights/WRLED_Wall_LampY_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWRWallLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>8.5</glowRadius>
@@ -359,6 +380,7 @@
     <label>wide range LED wall light (pink)</label>
     <description>Power-saving LED wall light that glows pink.</description>
     <uiIconPath>WRWallLights/WRLED_Wall_LampP_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWRWallLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>8.5</glowRadius>
@@ -373,6 +395,7 @@
     <label>wide range LED wall light (violet)</label>
     <description>Power-saving LED wall light that glows violet.</description>
     <uiIconPath>WRWallLights/WRLED_Wall_LampV_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWRWallLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>10.3</glowRadius>
@@ -387,6 +410,7 @@
     <label>wide range LED wall light (teal)</label>
     <description>Power-saving LED wall light that glows teal.</description>
     <uiIconPath>WRWallLights/WRLED_Wall_LampT_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWRWallLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>11</glowRadius>
@@ -405,18 +429,20 @@
 	<graphicData>
        <texPath>Lights/LED_Lamp</texPath>
        <graphicClass>Graphic_Single</graphicClass>
-       <shaderType>Transparent</shaderType>
+       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <blueprintGraphicData>
-    <texPath>Lights/LED_Lamp</texPath>
-    </blueprintGraphicData>
     <uiIconPath>Lights/LED_Lamp_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDCeilLights</designatorDropdown>
     <thingClass>Building</thingClass>
     <category>Building</category>
-	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<minifiedDef>MinifiedThing</minifiedDef>
     <building>
 	 <isInert>true</isInert>
      <isEdifice>false</isEdifice>
+     <blueprintGraphicData>
+        <texPath>Blueprints/BP_LED_Lamp</texPath>
+        <shaderType>Cutout</shaderType>
+      </blueprintGraphicData>
     </building>
     <statBases>
       <WorkToBuild>80</WorkToBuild>
@@ -455,6 +481,7 @@
     <label>LED light (red)</label>
     <description>Power-saving LED light that glows red.</description>
     <uiIconPath>Lights/LED_LampR_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>9</glowRadius>
@@ -469,6 +496,7 @@
     <label>LED light (green)</label>
     <description>Power-saving LED light that glows green.</description>
     <uiIconPath>Lights/LED_LampG_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDCeilLights</designatorDropdown>
     <comps>   
       <li Class="CompProperties_Glower">
         <glowRadius>9</glowRadius>
@@ -483,6 +511,7 @@
     <label>LED light (blue)</label>
     <description>Power-saving LED light that glows blue.</description>
     <uiIconPath>Lights/LED_LampB_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>8.5</glowRadius>
@@ -497,6 +526,7 @@
     <label>LED light (yellow)</label>
     <description>Power-saving LED light that glows yellow.</description>
     <uiIconPath>Lights/LED_LampY_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>5.6</glowRadius>
@@ -511,6 +541,7 @@
     <label>LED light (pink)</label>
     <description>Power-saving LED light that glows pink.</description>
     <uiIconPath>Lights/LED_LampP_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>5.6</glowRadius>
@@ -525,6 +556,7 @@
     <label>LED light (violet)</label>
     <description>Power-saving LED light that glows violet.</description>
     <uiIconPath>Lights/LED_LampV_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>6.5</glowRadius>
@@ -540,6 +572,7 @@
     <label>LED light (teal)</label>
     <description>Power-saving LED light that glows teal.</description>
     <uiIconPath>Lights/LED_LampT_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>7</glowRadius>
@@ -558,16 +591,18 @@
 	<graphicData>
        <texPath>WRLights/WRLED_Lamp</texPath>
     </graphicData>
-    <blueprintGraphicData>
-    <texPath>WRLights/WRLED_Lamp</texPath>
-    </blueprintGraphicData>
     <uiIconPath>WRLights/WRLED_Lamp_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWRCeilLights</designatorDropdown>
     <thingClass>Building</thingClass>
     <category>Building</category>
-	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<minifiedDef>MinifiedThing</minifiedDef>
     <building>
 	 <isInert>true</isInert>
      <isEdifice>false</isEdifice>
+     <blueprintGraphicData>
+        <texPath>Blueprints/BP_WRLED_Lamp</texPath>
+        <shaderType>Cutout</shaderType>
+      </blueprintGraphicData>
     </building>
     <statBases>
       <WorkToBuild>80</WorkToBuild>
@@ -606,6 +641,7 @@
     <label>wide range LED light (red)</label>
     <description>Power-saving LED light that glows red.</description>
     <uiIconPath>WRLights/WRLED_LampR_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWRCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>17</glowRadius>
@@ -620,6 +656,7 @@
     <label>wide range LED light (green)</label>
     <description>Power-saving LED light that glows green.</description>
     <uiIconPath>WRLights/WRLED_LampG_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWRCeilLights</designatorDropdown>
     <comps>   
       <li Class="CompProperties_Glower">
         <glowRadius>14.6</glowRadius>
@@ -634,6 +671,7 @@
     <label>wide range LED light (blue)</label>
     <description>Power-saving LED light that glows blue.</description>
     <uiIconPath>WRLights/WRLED_LampB_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWRCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>12.3</glowRadius>
@@ -648,6 +686,7 @@
     <label>wide range LED light (yellow)</label>
     <description>Power-saving LED light that glows yellow.</description>
     <uiIconPath>WRLights/WRLED_LampY_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWRCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>8.5</glowRadius>
@@ -662,6 +701,7 @@
     <label>wide range LED light (pink)</label>
     <description>Power-saving LED light that glows pink.</description>
     <uiIconPath>WRLights/WRLED_LampP_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWRCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>8.5</glowRadius>
@@ -676,6 +716,7 @@
     <label>wide range LED light (violet)</label>
     <description>Power-saving LED light that glows violet.</description>
     <uiIconPath>WRLights/WRLED_LampV_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWRCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>10.3</glowRadius>
@@ -690,6 +731,7 @@
     <label>wide range LED light (teal)</label>
     <description>Power-saving LED light that glows teal.</description>
     <uiIconPath>WRLights/WRLED_LampT_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDWRCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>11</glowRadius>
@@ -709,22 +751,24 @@
     <graphicData>
        <texPath>HIDLights/HID LED_Lamp</texPath>
        <graphicClass>Graphic_Single</graphicClass>
-       <shaderType>Transparent</shaderType>
+       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <blueprintGraphicData>
-    <texPath>HIDLights/HID LED_Lamp</texPath>
-    </blueprintGraphicData>
     <uiIconPath>HIDLights/HID LED_Lamp_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_HIDCeilLights</designatorDropdown>
     <thingClass>Building</thingClass>
     <category>Building</category>
-	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<minifiedDef>MinifiedThing</minifiedDef>
     <building>
 	 <isInert>true</isInert>
      <isEdifice>false</isEdifice>
+     <blueprintGraphicData>
+        <texPath>Blueprints/BP_HID_LED_Lamp</texPath>
+        <shaderType>Cutout</shaderType>
+      </blueprintGraphicData>
     </building>
     <statBases>
       <WorkToBuild>80</WorkToBuild>
-      <Mass>2</Mass>
+      <Mass>1.5</Mass>
     </statBases>
     <altitudeLayer>MoteOverhead</altitudeLayer>
     <passability>Standable</passability>
@@ -760,6 +804,7 @@
     <label>HID LED light (red)</label>
     <description>Power-saving LED light for larger areas that glows red.</description>
     <uiIconPath>HIDLights/HID LED_LampR_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_HIDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>23</glowRadius>
@@ -774,6 +819,7 @@
     <label>HID LED light (green)</label>
     <description>Power-saving LED light for larger areas that glows green.</description>
     <uiIconPath>HIDLights/HID LED_LampG_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_HIDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>20</glowRadius>
@@ -788,6 +834,7 @@
     <label>HID LED light (blue)</label>
     <description>Power-saving LED light for larger areas that glows blue.</description>
     <uiIconPath>HIDLights/HID LED_LampB_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_HIDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>18</glowRadius>
@@ -802,6 +849,7 @@
     <label>HID LED light (yellow)</label>
     <description>Power-saving LED light for larger areas that glows yellow.</description>
     <uiIconPath>HIDLights/HID LED_LampY_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_HIDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>13.5</glowRadius>
@@ -816,6 +864,7 @@
     <label>HID LED light (pink)</label>
     <description>Power-saving LED light for larger areas that glows pink.</description>
     <uiIconPath>HIDLights/HID LED_LampP_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_HIDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>13</glowRadius>
@@ -830,6 +879,7 @@
     <label>HID LED light (violet)</label>
     <description>Power-saving LED light for larger areas that glows violet.</description>
     <uiIconPath>HIDLights/HID LED_LampV_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_HIDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>15</glowRadius>
@@ -844,6 +894,7 @@
     <label>HID LED light (teal)</label>
     <description>Power-saving LED light for larger areas that glows teal.</description>
     <uiIconPath>HIDLights/HID LED_LampT_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_HIDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>16</glowRadius>
@@ -862,18 +913,20 @@
     <graphicData>
        <texPath>WRHIDLights/WRHID LED_Lamp</texPath>
        <graphicClass>Graphic_Single</graphicClass>
-       <shaderType>Transparent</shaderType>
+       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <blueprintGraphicData>
-    <texPath>WRHIDLights/WRHID LED_Lamp</texPath>
-    </blueprintGraphicData>
     <uiIconPath>WRHIDLights/WRHID LED_Lamp_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_WRHIDCeilLights</designatorDropdown>
     <thingClass>Building</thingClass>
     <category>Building</category>
-	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<minifiedDef>MinifiedThing</minifiedDef>
     <building>
 	 <isInert>true</isInert>
      <isEdifice>false</isEdifice>
+     <blueprintGraphicData>
+        <texPath>Blueprints/BP_WRHID LED_Lamp</texPath>
+        <shaderType>Cutout</shaderType>
+      </blueprintGraphicData>
     </building>
     <statBases>
       <WorkToBuild>80</WorkToBuild>
@@ -912,6 +965,7 @@
     <label>wide range HID LED light (red)</label>
     <description>Power-saving LED light for huge areas that glows red.</description>
     <uiIconPath>WRHIDLights/WRHID LED_LampR_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_WRHIDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>35</glowRadius>
@@ -926,6 +980,7 @@
     <label>wide range HID LED light (green)</label>
     <description>Power-saving LED light for huge areas that glows green.</description>
     <uiIconPath>WRHIDLights/WRHID LED_LampG_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_WRHIDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>30</glowRadius>
@@ -940,6 +995,7 @@
     <label>wide range HID LED light (blue)</label>
     <description>Power-saving LED light for huge areas that glows blue.</description>
     <uiIconPath>WRHIDLights/WRHID LED_LampB_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_WRHIDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>26</glowRadius>
@@ -955,6 +1011,7 @@
     <label>wide range HID LED light (yellow)</label>
     <description>Power-saving LED light for huge areas that glows yellow.</description>
     <uiIconPath>WRHIDLights/WRHID LED_LampY_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_WRHIDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>21.7</glowRadius>
@@ -969,6 +1026,7 @@
     <label>wide range HID LED light (pink)</label>
     <description>Power-saving LED light for huge areas that glows pink.</description>
     <uiIconPath>WRHIDLights/WRHID LED_LampP_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_WRHIDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>21.5</glowRadius>
@@ -983,6 +1041,7 @@
     <label>wide range HID LED light (violet)</label>
     <description>Power-saving LED light for huge areas that glows violet.</description>
     <uiIconPath>WRHIDLights/WRHID LED_LampV_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_WRHIDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>22</glowRadius>
@@ -997,6 +1056,7 @@
     <label>wide range HID LED light (teal)</label>
     <description>Power-saving LED light for huge areas that glows teal.</description>
     <uiIconPath>WRHIDLights/WRHID LED_LampT_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_WRHIDCeilLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>24</glowRadius>
@@ -1015,12 +1075,15 @@
     <graphicData>
        <texPath>HIDLights/HID_LED_Square</texPath>
        <graphicClass>Graphic_Single</graphicClass>
-       <shaderType>Transparent</shaderType>
+       <shaderType>TransparentPostLight</shaderType>
       <drawSize>(2,2)</drawSize>
     </graphicData>
-    <blueprintGraphicData>
-    <texPath>HIDLights/HID_LED_Square</texPath>
-    </blueprintGraphicData>
+    <building>
+     <blueprintGraphicData>
+        <texPath>Blueprints/BP_LED_Square</texPath>
+        <shaderType>Cutout</shaderType>
+      </blueprintGraphicData>
+    </building>
     <uiIconPath>HIDLights/HID_LED_Square_MenuIcon</uiIconPath>
     <size>(2,2)</size>
     <comps>
@@ -1039,12 +1102,15 @@
     <graphicData>
        <texPath>WRHIDLights/WRHID_LED_Square</texPath>
        <graphicClass>Graphic_Single</graphicClass>
-       <shaderType>Transparent</shaderType>
+       <shaderType>TransparentPostLight</shaderType>
       <drawSize>(2,2)</drawSize>
     </graphicData>
-    <blueprintGraphicData>
-    <texPath>WRHIDLights/WRHID_LED_Square</texPath>
-    </blueprintGraphicData>
+    <building>
+     <blueprintGraphicData>
+        <texPath>Blueprints/BP_LED_Square</texPath>
+        <shaderType>Cutout</shaderType>
+      </blueprintGraphicData>
+    </building>
     <uiIconPath>WRHIDLights/WRHID_LED_Square_MenuIcon</uiIconPath>
     <size>(2,2)</size>
     <comps>

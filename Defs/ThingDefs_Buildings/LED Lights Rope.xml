@@ -11,18 +11,18 @@
       <linkFlags>
         <li>Custom8</li>
       </linkFlags>
-      <shaderType>Transparent</shaderType>
+      <shaderType>TransparentPostLight</shaderType>
       <damageData>
         <rect>(0,0.35,1,0.3)</rect>
       </damageData>
     </graphicData>
-    <blueprintGraphicData>
-      <texPath>RopeLight_Atlas</texPath>
-    </blueprintGraphicData>
     <uiIconPath>RopeLight_MenuIcon</uiIconPath>
     <building>
 	 <isInert>true</isInert>
       <isEdifice>false</isEdifice>
+      <blueprintGraphicData>
+        <texPath>Blueprints/BP_RopeLight_Atlas</texPath>
+      </blueprintGraphicData>
     </building>
     <altitudeLayer>MoteOverhead</altitudeLayer>
     <passability>Standable</passability>
@@ -43,7 +43,7 @@
     <rotatable>false</rotatable>
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
-    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>LEDLights</designationCategory>
     <constructEffect>ConstructMetal</constructEffect>
@@ -60,6 +60,7 @@
     <label>LED rope light</label>
     <description>LED rope lights that illuminate a small area. Must be directly connected to power.</description>
     <uiIconPath>RopeLight_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDRopeLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Power">
         <transmitsPower>true</transmitsPower>
@@ -80,6 +81,7 @@
     <label>LED rope light (red)</label>
     <description>LED rope lights that illuminate a small area red. Must be directly connected to power.</description>
     <uiIconPath>RopeLightR_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDRopeLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Power">
         <transmitsPower>true</transmitsPower>
@@ -100,6 +102,7 @@
     <label>LED rope light (green)</label>
     <description>LED rope lights that illuminate a small area green. Must be directly connected to power.</description>
     <uiIconPath>RopeLightG_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDRopeLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Power">
         <transmitsPower>true</transmitsPower>
@@ -120,6 +123,7 @@
     <label>LED rope light (blue)</label>
     <description>LED rope lights that illuminate a small area blue. Must be directly connected to power.</description>
     <uiIconPath>RopeLightB_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDRopeLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Power">
         <transmitsPower>true</transmitsPower>
@@ -141,6 +145,7 @@
     <label>LED rope light (yellow)</label>
     <description>LED rope lights that illuminate a small area yellow. Must be directly connected to power.</description>
     <uiIconPath>RopeLightY_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDRopeLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Power">
         <transmitsPower>true</transmitsPower>
@@ -163,6 +168,7 @@
     <label>LED rope light (pink)</label>
     <description>LED rope lights that illuminate a small area pink. Must be directly connected to power.</description>
     <uiIconPath>RopeLightP_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDRopeLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Power">
         <transmitsPower>true</transmitsPower>
@@ -184,6 +190,7 @@
     <label>LED rope light (violet)</label>
     <description>LED rope lights that illuminate a small area violet. Must be directly connected to power.</description>
     <uiIconPath>RopeLightV_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDRopeLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Power">
         <transmitsPower>true</transmitsPower>
@@ -204,6 +211,7 @@
     <label>LED rope light (teal)</label>
     <description>LED rope lights that illuminate a small area teal. Must be directly connected to power.</description>
     <uiIconPath>RopeLightT_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_LEDRopeLights</designatorDropdown>
     <comps>
       <li Class="CompProperties_Power">
         <transmitsPower>true</transmitsPower>
@@ -226,6 +234,7 @@
     <label>automatic LED rope growing light</label>
     <description>Lights a small area brightly enough to grow crops, uses very little energy but is slightly expensive to build. Will turn off automatically at night.</description>
     <uiIconPath>RopeLightGr_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_AutoGrowingLights</designatorDropdown>
     <costList>
       <Steel>2</Steel>
       <Silver>15</Silver>
@@ -261,6 +270,7 @@
     <label>manual LED rope growing light</label>
     <description>Lights a small area brightly enough to grow crops, uses very little energy but is slightly expensive to build. Must be switched on and off manually.</description>
     <uiIconPath>RopeLightGr_MenuIcon</uiIconPath>
+    <designatorDropdown>CCP_ManGrowingLights</designatorDropdown>
     <costList>
       <Steel>2</Steel>
       <Silver>15</Silver>
